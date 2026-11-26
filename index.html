@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramayan Adhyay · Panchavati, Kishkindha and The Last Chapter · ADHYAY</title>
+<meta name="description" content="The Ramayan was never meant to be only read. Panchavati, Kishkindha and The Last Chapter, hosted with care in a small group by ADHYAY, The Eternal Chapters. Take one chapter, or all three.">
+<meta property="og:title" content="Ramayan Adhyay · ADHYAY, The Eternal Chapters">
+<meta property="og:description" content="The Ramayan was never meant to be only read. It was meant to be experienced. Panchavati, Kishkindha and The Last Chapter.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#050302">
+<link rel="preload" href="assets/fonts/lora-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/lora-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/hero-banner.webp" as="image">
+<!--
+  META PIXEL: paste the standard Meta Pixel base code here (replace PIXEL_ID).
+  PageView fires from the base code. The enquiry form fires fbq('track','Lead', {...}, {eventID})
+  and, for high and medium intent, fbq('trackCustom','QualifiedLead'). The same eventID goes to the CRM.
+  The thank-you page fires fbq('track','Schedule') when a call is booked on TidyCal.
+-->
+<style>
+/* Lora is the brand typeface (adhyaytheeternalchapters.com). It has no rupee sign,
+   so a single borrowed glyph covers U+20B9 only. */
+@font-face{font-family:"Lora";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/lora-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Lora";font-style:italic;font-weight:400;font-display:swap;src:url(assets/fonts/lora-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:"Lora";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/lora-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Lora";font-style:normal;font-weight:600 700;font-display:swap;src:url(assets/fonts/lora-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Rupee";font-weight:300 700;font-display:swap;src:url(assets/fonts/rupee-cormorant-500.woff2) format("woff2");unicode-range:U+20B9}
+:root{
+  --ink:#050302; --ink-2:#0a0705; --ink-3:#110b07; --ink-4:#19110a;
+  --gold:#c19a33; --gold-hi:#eed489; --gold-lite:#fdf4cf; --gold-deep:#8a6d18;
+  --gold-metal:linear-gradient(135deg,#fdf4cf 0%,#eed489 17%,#c19a33 45%,#8a6d18 68%,#dcbd63 88%,#f3e3a5 100%);
+  --gold-text:linear-gradient(100deg,#fbefc3 0%,#ecd082 32%,#c49b35 62%,#f2dc96 100%);
+  --cream:#f7eed9; --cream-dim:rgba(247,238,217,.8); --cream-dimmer:rgba(247,238,217,.56);
+  --parch:#f7efdd; --parch-2:#ece0c6; --umber:#2b1e11; --umber-2:#4a3722; --umber-dim:#6b563a;
+  --maroon:#5c1215;
+  --line:rgba(238,212,137,.28); --line-2:rgba(238,212,137,.13);
+  --f:"Rupee","Lora",Georgia,"Times New Roman",serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --out:cubic-bezier(.16,1,.3,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--cream);font-family:var(--f);font-size:17px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+@supports (overflow:clip){body{overflow-x:clip}}
+/* a whisper of film grain for depth */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.055;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3,h4{font-family:var(--f);font-weight:600;line-height:1.16;text-wrap:balance;letter-spacing:-.012em}
+p{text-wrap:pretty}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-hi);display:inline-flex;align-items:center;gap:13px}
+.eyebrow::before{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.center .eyebrow::after{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.h2{font-size:clamp(28px,3.5vw,46px);font-weight:600}
+.h2 em{font-style:italic;font-weight:500;color:var(--gold-hi)}
+.lede{color:var(--cream-dim);max-width:58ch;font-size:16.5px}
+.fine{font-size:13px;color:var(--cream-dimmer);margin-top:22px;max-width:70ch}
+.center{text-align:center;justify-items:center}
+.center .lede,.center .fine,.fine.center{margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.logo{display:block;color:var(--gold)}
+section{position:relative}
+.sec-head{display:grid;gap:14px;margin-bottom:clamp(36px,4.6vw,60px)}
+.orn{display:flex;align-items:center;justify-content:center;gap:13px;color:var(--gold);opacity:.66}
+.orn::before,.orn::after{content:"";height:1px;width:min(130px,17vw)}
+.orn::before{background:linear-gradient(90deg,transparent,currentColor)}
+.orn::after{background:linear-gradient(270deg,transparent,currentColor)}
+.orn i{width:6px;height:6px;transform:rotate(45deg);background:currentColor;display:block;box-shadow:10px 0 0 currentColor,-10px 0 0 currentColor}
+
+/* ---------- motion system ---------- */
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1.1s var(--out),transform 1.1s var(--out)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+.reveal-img img{clip-path:inset(100% 0 0 0);transform:scale(1.16);transition:clip-path 1.5s var(--out),transform 2s var(--out)}
+.reveal-img.in img{clip-path:inset(0 0 0 0);transform:scale(1)}
+.split .w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .04em .14em;margin:0 -.04em -.14em}
+.split .w>span{display:inline-block;transform:translateY(108%);transition:transform 1.05s var(--out)}
+.split.in .w>span{transform:none}
+.draw{transform:scaleX(0);transform-origin:center;transition:transform 1.6s var(--out)}
+.draw.in{transform:scaleX(1)}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes drip{to{transform:translateY(44px);opacity:0}}
+
+/* ---------- buttons ---------- */
+.btn{--bg:var(--gold-metal);display:inline-flex;align-items:center;justify-content:center;gap:11px;padding:15px 27px;border-radius:999px;font-size:12.5px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;text-decoration:none;color:#1a1207;background:var(--bg);
+  box-shadow:0 12px 34px -10px rgba(193,154,51,.62),0 0 0 1px rgba(253,244,207,.34),inset 0 1px 0 rgba(255,255,255,.62),inset 0 -1px 0 rgba(90,68,12,.4);
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease);position:relative;overflow:hidden;white-space:nowrap;line-height:1.2}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%);transform:translateX(-120%);transition:transform .9s var(--ease)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 20px 46px -12px rgba(238,212,137,.78),0 0 0 1px rgba(253,244,207,.5),inset 0 1px 0 rgba(255,255,255,.7),inset 0 -1px 0 rgba(90,68,12,.4)}
+.btn:hover::after{transform:translateX(120%)}
+.btn svg{width:15px;height:15px;flex:none}
+.btn-ghost{background:rgba(5,3,2,.35);color:var(--cream);border:1px solid var(--line);box-shadow:none;backdrop-filter:blur(6px)}
+.btn-ghost:hover{border-color:var(--gold-hi);box-shadow:none;color:var(--gold-hi)}
+.btn-ghost::after{display:none}
+.btn-sm{padding:11px 20px;font-size:11px}
+.tlink{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-hi);text-decoration:none;border-bottom:1px solid rgba(238,212,137,.35);padding-bottom:3px;transition:border-color .3s,gap .3s}
+.tlink:hover{border-color:var(--gold-hi);gap:12px}
+.tlink svg{width:13px;height:13px}
+
+/* ---------- gold thread: scroll progress ---------- */
+.thread{position:fixed;left:24px;top:112px;bottom:52px;width:16px;z-index:45;opacity:0;transition:opacity .7s;pointer-events:none;display:none}
+.thread.show{opacity:1;pointer-events:auto}
+.thread::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(238,212,137,.14)}
+.thread .fill{position:absolute;left:50%;top:0;width:1px;height:100%;transform-origin:top;transform:scaleY(0);background:linear-gradient(var(--gold-lite),var(--gold) 55%,var(--gold-deep))}
+.thread .bead{position:absolute;left:50%;top:0;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:var(--gold-lite);box-shadow:0 0 14px 4px rgba(238,212,137,.65)}
+.thread a{position:absolute;left:0;width:16px;height:16px;margin-top:-8px;display:grid;place-items:center;text-decoration:none}
+.thread a i{width:7px;height:7px;transform:rotate(45deg);border:1px solid rgba(238,212,137,.45);background:var(--ink);transition:background .4s,border-color .4s}
+.thread a.on i{background:var(--gold-hi);border-color:var(--gold-hi)}
+.thread a span{position:absolute;left:22px;top:50%;transform:translate(-6px,-50%);white-space:nowrap;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-hi);background:rgba(5,3,2,.88);border:1px solid var(--line);padding:5px 10px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s}
+.thread a:hover span,.thread a:focus-visible span{opacity:1;transform:translate(0,-50%)}
+@media (min-width:1360px){.thread{display:block}}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .5s,backdrop-filter .5s,border-color .5s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(5,3,2,.84);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-color:var(--line-2)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:22px}
+.navbrand{display:grid;gap:5px;text-decoration:none}
+.navbrand .logo{width:126px}
+.navbrand span{font-size:8.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold-hi);opacity:.82;padding-left:2px}
+.nav-links{display:flex;gap:26px;list-style:none;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.nav-links a{text-decoration:none;color:var(--cream-dim);transition:color .3s;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold-hi);transform:scaleX(0);transition:transform .4s var(--out)}
+.nav-links a:hover{color:var(--gold-hi)}
+.nav-links a:hover::after{transform:scaleX(1)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:max(100svh,720px);display:grid;align-items:center;overflow:hidden;isolation:isolate;padding:118px 0 112px;text-align:center}
+.hero-bg{position:absolute;inset:0;z-index:-3;background:var(--ink);overflow:hidden}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.64;transform:scale(1.04);will-change:transform}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(to bottom,rgba(5,3,2,.9) 0%,rgba(5,3,2,.3) 30%,rgba(5,3,2,.66) 66%,var(--ink) 99%),
+  radial-gradient(78% 68% at 50% 48%,transparent 26%,rgba(5,3,2,.7) 100%)}
+#embers{position:absolute;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none}
+.hero-frame{position:absolute;inset:clamp(13px,1.8vw,28px);border:1px solid rgba(238,212,137,.22);border-radius:3px;pointer-events:none;z-index:1}
+.hero-frame span{position:absolute;width:15px;height:15px;border:1px solid var(--gold-hi);opacity:.8}
+.hero-frame span:nth-child(1){top:-1px;left:-1px;border-right:0;border-bottom:0}
+.hero-frame span:nth-child(2){top:-1px;right:-1px;border-left:0;border-bottom:0}
+.hero-frame span:nth-child(3){bottom:-1px;left:-1px;border-right:0;border-top:0}
+.hero-frame span:nth-child(4){bottom:-1px;right:-1px;border-left:0;border-top:0}
+.hero .wrap{position:relative;z-index:2;display:grid;justify-items:center;will-change:transform,opacity}
+.hero-mark{width:clamp(182px,21vw,278px);color:var(--gold-hi);filter:drop-shadow(0 5px 26px rgba(0,0,0,.75))}
+.hero-tag{margin-top:20px;font-size:clamp(10px,1.05vw,12px);font-weight:600;letter-spacing:.42em;text-transform:uppercase;background:var(--gold-metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1{font-size:clamp(31px,4vw,56px);font-weight:600;margin:18px 0 0;line-height:1.14;text-shadow:0 3px 30px rgba(0,0,0,.6)}
+.hero h1 em{display:block;font-style:italic;font-weight:500;font-size:.6em;margin-top:.24em;background:var(--gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .orn{margin-top:24px}
+.hero-sub{max-width:34em;color:var(--cream-dim);font-size:17px;margin-top:20px;text-shadow:0 2px 18px rgba(0,0,0,.7)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px;justify-content:center}
+.proof{display:flex;flex-wrap:wrap;gap:9px 22px;margin-top:32px;list-style:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-dim);justify-content:center}
+.proof li{display:flex;align-items:center;gap:9px}
+.proof li::before{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--gold);flex:none}
+.scroll-cue{position:absolute;left:50%;bottom:30px;z-index:2;transform:translateX(-50%);width:1px;height:48px;background:linear-gradient(var(--gold-hi),transparent);opacity:.75}
+.scroll-cue::after{content:"";position:absolute;left:-2px;top:0;width:5px;height:5px;border-radius:50%;background:var(--gold-hi);animation:drip 2.4s var(--ease) infinite}
+
+/* ---------- city strip ---------- */
+.citystrip{position:relative;background:var(--ink);padding:0 0 clamp(58px,7vw,92px);z-index:3}
+.cities-art{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:clamp(-96px,-7vw,-56px)}
+.ca{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 34px 64px -26px rgba(0,0,0,.95),0 0 0 1px rgba(238,212,137,.34);cursor:pointer;display:block;text-decoration:none;color:inherit;transition:transform .6s var(--out),box-shadow .6s}
+.ca:hover{transform:translateY(-6px);box-shadow:0 44px 74px -26px rgba(0,0,0,.95),0 0 0 1px rgba(238,212,137,.7)}
+.ca img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--out)}
+.ca:hover img{transform:scale(1.07)}
+.ca::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,3,2,.94),rgba(5,3,2,.04) 58%)}
+.ca::before{content:"";position:absolute;inset:9px;border:1px solid rgba(253,244,207,.3);border-radius:5px;z-index:2;pointer-events:none}
+.ca figcaption{position:absolute;left:0;right:0;bottom:16px;z-index:3;padding:0 18px;text-align:center;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-dim)}
+.ca figcaption b{display:block;font-size:21px;font-weight:600;letter-spacing:.01em;color:var(--gold-hi);line-height:1.1;margin-bottom:4px;text-transform:none}
+
+/* ---------- clarity ---------- */
+.clarity{padding:clamp(70px,9vw,118px) 0;background:linear-gradient(var(--ink),var(--ink-2));border-top:1px solid var(--line-2)}
+.clarity .wrap{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(30px,5vw,70px);align-items:center}
+.cl-art{position:relative;margin-top:30px;border-radius:14px;overflow:hidden;aspect-ratio:16/10;box-shadow:0 40px 70px -34px rgba(0,0,0,.9),0 0 0 1px rgba(238,212,137,.26)}
+.cl-art img{width:100%;height:100%;object-fit:cover}
+.cl-art figcaption{position:absolute;left:16px;bottom:14px;z-index:2;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-dim)}
+.cl-art::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,3,2,.7),transparent 40%)}
+.cl-list{display:grid;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,rgba(238,212,137,.05),rgba(238,212,137,.015))}
+.cl-row{display:grid;grid-template-columns:30px 1fr;gap:16px;padding:21px 24px;border-bottom:1px solid var(--line-2);align-items:start;transition:background .4s}
+.cl-row:hover{background:rgba(238,212,137,.04)}
+.cl-row:last-child{border-bottom:0}
+.cl-row.no{background:rgba(92,18,21,.16)}
+.cl-mark{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold-hi);font-size:13px;margin-top:2px}
+.cl-row.no .cl-mark{border-color:rgba(242,231,208,.3);color:var(--cream-dimmer)}
+.cl-row b{display:block;font-size:17px;font-weight:600;color:var(--cream);margin-bottom:3px}
+.cl-row p{font-size:14.8px;color:var(--cream-dim);line-height:1.62}
+
+/* ---------- manifesto interlude ---------- */
+.manifesto{padding:clamp(120px,16vw,210px) 0;overflow:hidden;text-align:center;background:radial-gradient(60% 60% at 50% 50%,rgba(193,154,51,.1),transparent 70%),var(--ink)}
+.mandala{position:absolute;left:50%;top:50%;width:min(920px,130vw);aspect-ratio:1;transform:translate(-50%,-50%);color:var(--gold-hi);opacity:.075;animation:spin 180s linear infinite;pointer-events:none}
+.manifesto p{position:relative;font-size:clamp(25px,3.5vw,46px);line-height:1.36;font-weight:500;max-width:21em;margin:0 auto;letter-spacing:-.015em}
+.manifesto .mw{opacity:.14;transition:opacity .5s var(--ease),color .5s}
+.manifesto .mw.on{opacity:1}
+.manifesto .g{font-style:italic;color:var(--gold-hi)}
+.manifesto cite{position:relative;display:block;margin-top:34px;font-style:normal;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-hi);opacity:.8}
+
+/* ---------- the book ---------- */
+.bookzone{padding:clamp(70px,9vw,118px) 0 clamp(60px,8vw,100px);background:radial-gradient(70% 55% at 50% 42%,rgba(193,154,51,.13),transparent 72%),var(--ink-2)}
+.booktabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:26px}
+.booktabs button{padding:9px 17px;border:1px solid var(--line);border-radius:999px;font-size:12.5px;color:var(--cream-dim);transition:all .3s}
+.booktabs button:hover{border-color:var(--gold-hi);color:var(--cream)}
+.booktabs button[aria-selected="true"]{background:rgba(238,212,137,.17);border-color:var(--gold-hi);color:var(--cream);font-weight:600}
+.book{position:relative;width:min(1140px,100%);margin-inline:auto;perspective:2400px}
+.bk-inner{position:relative;display:grid;grid-template-columns:1fr 1fr;transform-style:preserve-3d;border-radius:10px;min-height:clamp(440px,42vw,558px);box-shadow:0 70px 110px -46px rgba(0,0,0,.98),0 0 0 1px rgba(238,212,137,.22)}
+.bk-inner::before{content:"";position:absolute;inset:-11px -13px;border-radius:14px;z-index:-1;background:linear-gradient(92deg,#3a1a10,#5c1215 49%,#2a100a 50%,#5c1215 51%,#3a1a10);box-shadow:0 50px 80px -34px rgba(0,0,0,.9),inset 0 0 0 1px rgba(238,212,137,.16)}
+.bk-page{position:relative;padding:clamp(24px,2.7vw,40px);background:var(--parch);color:var(--umber);overflow:hidden;min-width:0;transition:opacity .2s}
+.bk-left{border-radius:10px 0 0 10px;background:linear-gradient(95deg,var(--parch) 72%,var(--parch-2))}
+.bk-right{border-radius:0 10px 10px 0;background:linear-gradient(265deg,var(--parch) 72%,var(--parch-2))}
+.bk-spine{position:absolute;left:50%;top:0;bottom:0;width:40px;transform:translateX(-50%);z-index:7;pointer-events:none;background:linear-gradient(90deg,rgba(74,45,18,0),rgba(74,45,18,.2) 38%,rgba(58,34,12,.33) 50%,rgba(74,45,18,.2) 62%,rgba(74,45,18,0))}
+.bk-eyebrow{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);font-weight:600}
+.bk-page h3,.leaf .face h3{font-size:clamp(27px,3vw,40px);color:var(--umber);margin:9px 0 0;font-weight:600}
+.bk-quote{font-style:italic;font-size:clamp(15.5px,1.5vw,18.5px);color:#7a5f22;line-height:1.45;margin:13px 0 15px;font-weight:500}
+.bk-page p.bd,.leaf .face p.bd{font-size:14.8px;color:var(--umber-2);line-height:1.68;margin-bottom:11px}
+.bk-orn{width:60px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:15px 0}
+.bk-fig{border-radius:7px;overflow:hidden;aspect-ratio:16/9;box-shadow:0 16px 32px -18px rgba(43,30,17,.7);position:relative}
+.bk-fig img{width:100%;height:100%;object-fit:cover}
+.bk-fig::after{content:"";position:absolute;inset:6px;border:1px solid rgba(255,248,230,.5);border-radius:3px}
+.bk-label{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin:17px 0 9px}
+.bk-list{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.bk-list li{font-size:12.8px;padding:5px 11px;border:1px solid rgba(122,98,23,.32);border-radius:999px;color:var(--umber-2)}
+.bk-in{margin-top:16px;padding-top:13px;border-top:1px solid rgba(122,98,23,.22);font-size:12.8px;color:var(--umber-dim)}
+.bk-in b{color:var(--umber);font-weight:600}
+.leaf{position:absolute;top:0;bottom:0;width:50%;transform-style:preserve-3d;z-index:9;will-change:transform}
+.leaf.fwd{left:50%;transform-origin:left center;animation:turnF .78s var(--ease) forwards}
+.leaf.bwd{left:0;transform-origin:right center;animation:turnB .78s var(--ease) forwards}
+@keyframes turnF{from{transform:rotateY(0)}to{transform:rotateY(-179deg)}}
+@keyframes turnB{from{transform:rotateY(0)}to{transform:rotateY(179deg)}}
+.leaf .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;padding:clamp(24px,2.7vw,40px);background:var(--parch);color:var(--umber);box-shadow:0 0 40px rgba(43,30,17,.25)}
+.leaf .face.fr{border-radius:0 10px 10px 0;background:linear-gradient(265deg,var(--parch) 72%,var(--parch-2))}
+.leaf .face.bk{transform:rotateY(180deg);border-radius:10px 0 0 10px;background:linear-gradient(95deg,var(--parch) 72%,var(--parch-2))}
+.bk-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:12;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:rgba(5,3,2,.86);border:1px solid var(--line);color:var(--gold-hi);font-size:22px;line-height:1;transition:all .3s;backdrop-filter:blur(6px)}
+.bk-nav:hover:not(:disabled){border-color:var(--gold-hi);background:rgba(5,3,2,.96);box-shadow:0 0 24px rgba(238,212,137,.3)}
+.bk-nav:disabled{opacity:.26;cursor:not-allowed}
+.bk-nav.prev{left:-25px}.bk-nav.next{right:-25px}
+.bk-foot{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:24px;flex-wrap:wrap}
+.bk-count{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-dimmer)}
+.bk-dots{display:flex;gap:8px}
+.bk-dots button{width:9px;height:9px;border-radius:50%;background:rgba(238,212,137,.26);transition:all .3s;padding:0}
+.bk-dots button[aria-current="true"]{background:var(--gold-hi);transform:scale(1.35);box-shadow:0 0 10px rgba(238,212,137,.6)}
+.bk-hint{text-align:center;margin-top:13px;font-size:12.5px;color:var(--cream-dimmer)}
+
+/* ---------- journeys: the thread selector ---------- */
+.journeys{padding:clamp(76px,9.5vw,124px) 0;background:linear-gradient(var(--ink-2),var(--ink))}
+.stage{display:grid;grid-template-columns:1.06fr .94fr;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:linear-gradient(160deg,var(--ink-4),var(--ink-3) 60%);box-shadow:0 70px 120px -60px rgba(0,0,0,.98)}
+.stage-art{position:relative;min-height:580px;overflow:hidden;background:var(--ink)}
+.stage-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.1);transition:opacity 1.1s var(--ease),transform 2.2s var(--out)}
+.stage-art img.on{opacity:1;transform:scale(1)}
+.stage-art::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 55%,rgba(17,11,7,.85)),linear-gradient(to top,rgba(5,3,2,.88),transparent 46%)}
+.stage-num{position:absolute;left:clamp(22px,3vw,40px);bottom:clamp(18px,2.6vw,34px);z-index:2;line-height:.82}
+.stage-num b{display:block;font-size:clamp(96px,11vw,158px);font-weight:600;background:var(--gold-text);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.04em;transition:opacity .4s}
+.stage-num span{display:block;margin-top:12px;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--cream-dim)}
+.stage-body{padding:clamp(28px,3.4vw,50px);display:flex;flex-direction:column}
+.st-k{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-hi);font-weight:600}
+.nights{position:relative;margin:18px 0 0;padding-bottom:40px}
+.nights input{-webkit-appearance:none;appearance:none;width:100%;height:30px;padding:0;border:0;border-radius:0;background:transparent;cursor:pointer;display:block;--p:0%}
+.nights input:focus{background:transparent}
+.nights input:focus{outline:none}
+.nights input:focus-visible::-webkit-slider-thumb{outline:2px solid var(--gold-lite);outline-offset:4px}
+.nights input::-webkit-slider-runnable-track{height:2px;border-radius:2px;background:linear-gradient(90deg,var(--gold-hi) var(--p),rgba(238,212,137,.18) var(--p))}
+.nights input::-moz-range-track{height:2px;background:rgba(238,212,137,.18);border-radius:2px}
+.nights input::-moz-range-progress{height:2px;background:var(--gold-hi);border-radius:2px}
+.nights input::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;margin-top:-11px;border-radius:50%;border:0;background:radial-gradient(circle at 36% 30%,#fffbe8,#eed489 34%,#a8831f 82%);box-shadow:0 0 0 6px rgba(238,212,137,.13),0 0 26px rgba(238,212,137,.8)}
+.nights input::-moz-range-thumb{width:24px;height:24px;border-radius:50%;border:0;background:radial-gradient(circle at 36% 30%,#fffbe8,#eed489 34%,#a8831f 82%);box-shadow:0 0 0 6px rgba(238,212,137,.13),0 0 26px rgba(238,212,137,.8)}
+.ticks{position:absolute;left:0;right:0;top:34px;height:40px}
+.ticks button{position:absolute;transform:translateX(-50%);text-align:center;line-height:1.15;padding:2px 6px;color:var(--cream-dimmer);transition:color .3s}
+.ticks button b{display:block;font-size:17px;font-weight:600}
+.ticks button span{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase}
+.ticks button[aria-pressed="true"]{color:var(--gold-hi)}
+.route{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin:28px 0 4px}
+.route::before{content:"";position:absolute;left:12.5%;right:12.5%;top:6px;height:1px;background:rgba(238,212,137,.16)}
+.route .rfill{position:absolute;left:12.5%;top:6px;height:1px;width:0;background:linear-gradient(90deg,var(--gold-hi),var(--gold));transition:width .9s var(--out)}
+.route .node{position:relative;display:grid;justify-items:center;gap:9px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dimmer);transition:color .5s}
+.route .node i{width:13px;height:13px;border-radius:50%;border:1px solid rgba(238,212,137,.45);background:var(--ink-3);transition:all .5s var(--out)}
+.route .node.on{color:var(--cream)}
+.route .node.on i{background:var(--gold-hi);border-color:var(--gold-hi);box-shadow:0 0 0 4px rgba(238,212,137,.14),0 0 16px rgba(238,212,137,.7)}
+.jd{margin-top:26px;padding-top:24px;border-top:1px solid var(--line-2);flex:1;display:flex;flex-direction:column;transition:opacity .35s,transform .35s}
+.jd.swap{opacity:0;transform:translateY(8px)}
+.jd h3{font-size:clamp(25px,2.5vw,32px)}
+.jd .jd-meta{font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-hi);margin-top:8px}
+.jd .jd-desc{font-size:15px;color:var(--cream-dim);margin-top:13px;line-height:1.66}
+.jd-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:auto;padding-top:22px}
+.jd-price small{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-dimmer)}
+.jd-price b{display:block;font-size:30px;font-weight:600;background:var(--gold-text);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.2;font-variant-numeric:lining-nums tabular-nums}
+.jd-price span{display:block;font-size:11.5px;color:var(--cream-dimmer)}
+
+.special-k{display:flex;align-items:center;gap:16px;margin:clamp(44px,5vw,64px) 0 20px}
+.special-k::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.special{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.sp{position:relative;border-radius:20px;overflow:hidden;min-height:470px;display:flex;align-items:flex-end;border:1px solid var(--line);isolation:isolate;box-shadow:0 50px 90px -50px rgba(0,0,0,.95)}
+.sp>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.8s var(--out)}
+.sp:hover>img{transform:scale(1.05)}
+.sp::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(5,3,2,.97) 8%,rgba(5,3,2,.6) 48%,rgba(5,3,2,.08))}
+.sp::after{content:"";position:absolute;inset:11px;border:1px solid rgba(253,244,207,.2);border-radius:13px;pointer-events:none}
+.sp-body{position:relative;padding:clamp(24px,2.8vw,36px);width:100%}
+.sp h3{font-size:clamp(25px,2.6vw,33px);margin-top:12px}
+.sp .sp-meta{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-hi);margin-top:8px}
+.sp p.sp-d{font-size:14.8px;color:var(--cream-dim);margin-top:12px;max-width:40ch}
+.sp-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:20px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:rgba(5,3,2,.5);backdrop-filter:blur(6px)}
+.seg button{padding:7px 14px;border-radius:999px;font-size:11.5px;letter-spacing:.06em;color:var(--cream-dim);transition:all .3s}
+.seg button[aria-pressed="true"]{background:rgba(238,212,137,.22);color:var(--cream);box-shadow:inset 0 0 0 1px rgba(238,212,137,.45)}
+.sp-price small{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-dimmer)}
+.sp-price b{font-size:24px;font-weight:600;color:var(--gold-hi);font-variant-numeric:lining-nums tabular-nums}
+.sp-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;align-items:center}
+
+.elevate{display:grid;grid-template-columns:auto 1fr 1fr;gap:clamp(20px,3vw,40px);align-items:start;margin-top:clamp(40px,5vw,60px);padding:clamp(24px,3vw,36px);border:1px solid var(--line);border-radius:20px;background:radial-gradient(80% 120% at 0% 0%,rgba(238,212,137,.09),transparent 60%),var(--ink-3)}
+.seal{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--gold-metal);color:#2a1d08;box-shadow:0 0 0 1px rgba(253,244,207,.4),0 12px 30px -10px rgba(193,154,51,.6)}
+.seal svg{width:28px;height:28px}
+.elevate h4{font-size:19px;margin-bottom:8px}
+.elevate p{font-size:14.8px;color:var(--cream-dim);line-height:1.66}
+.elevate .tlink{margin-top:14px}
+
+/* ---------- Jain Tirtha ---------- */
+.jain{background:var(--ink);border-top:1px solid var(--line-2)}
+.jain-hero{position:relative;height:clamp(440px,64vh,640px);overflow:hidden;display:flex;align-items:flex-end}
+.jain-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.jain-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,var(--ink) 2%,rgba(5,3,2,.55) 42%,rgba(5,3,2,.12) 72%,rgba(5,3,2,.5)),linear-gradient(90deg,rgba(5,3,2,.6),transparent 55%)}
+.jain-hero .wrap{position:relative;z-index:2;padding-bottom:clamp(30px,4vw,54px);opacity:0;transform:translateY(24px);transition:opacity 1.2s var(--out) .5s,transform 1.2s var(--out) .5s}
+.jain-hero.in .wrap{opacity:1;transform:none}
+.jain-hero h2{font-size:clamp(34px,5vw,66px);margin-top:14px;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.jain-hero .sub{font-style:italic;font-weight:500;font-size:clamp(18px,2.1vw,25px);background:var(--gold-text);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:6px;display:inline-block}
+.jain-body{padding:clamp(34px,4vw,54px) 0 clamp(76px,9vw,118px)}
+.jain-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,4vw,60px);align-items:end;margin-bottom:clamp(34px,4vw,52px)}
+.jain-intro p{font-size:clamp(17px,1.6vw,20px);color:var(--cream);line-height:1.6;max-width:36em}
+.jain-facts{display:flex;gap:28px;justify-content:flex-end;flex-wrap:wrap}
+.jain-facts div{text-align:right}
+.jain-facts b{display:block;font-size:34px;font-weight:600;background:var(--gold-text);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.jain-facts span{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-dimmer)}
+.tirths{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tirth{position:relative;padding:28px 26px 26px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(238,212,137,.065),rgba(238,212,137,.01));display:flex;flex-direction:column}
+.tirth .tn{font-size:52px;font-weight:600;line-height:1;background:var(--gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tirth .tk{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-hi);margin-top:8px;font-weight:600}
+.tirth h3{font-size:24px;margin-top:18px}
+.tirth p{font-size:14.6px;color:var(--cream-dim);line-height:1.66;margin-top:10px}
+.tirth .names{margin-top:auto;padding-top:16px;border-top:1px solid var(--line-2);font-size:12.6px;color:var(--cream-dimmer);font-style:italic}
+.tirth p+.names{margin-top:18px}
+.practices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.practice{display:grid;grid-template-columns:44px 1fr;gap:15px;align-items:start;padding:20px 22px;border-radius:16px;background:rgba(238,212,137,.035);border:1px solid var(--line-2)}
+.practice .pi{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);color:var(--gold-hi)}
+.practice .pi svg{width:20px;height:20px}
+.practice b{display:block;font-size:15.5px;font-weight:600}
+.practice p{font-size:13.8px;color:var(--cream-dim);line-height:1.58;margin-top:3px}
+.jain-foot{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:28px;padding-top:26px;border-top:1px solid var(--line-2)}
+.jain-foot p{font-size:14px;color:var(--cream-dimmer);max-width:60ch}
+
+/* ---------- promise slider ---------- */
+.promise{padding:clamp(76px,9.5vw,124px) 0 clamp(60px,7vw,96px);background:linear-gradient(var(--ink),var(--ink-2));overflow:hidden}
+.promise .sec-head{grid-template-columns:1fr auto;align-items:end;gap:24px}
+.promise .sec-head>div:first-child{display:grid;gap:14px}
+.arrows{display:flex;gap:10px}
+.arrows button{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--gold-hi);transition:all .3s;background:rgba(238,212,137,.03)}
+.arrows button:hover:not(:disabled){border-color:var(--gold-hi);background:rgba(238,212,137,.1);box-shadow:0 0 24px rgba(238,212,137,.22)}
+.arrows button:disabled{opacity:.3;cursor:default}
+.arrows svg{width:17px;height:17px}
+.arrows .l svg{transform:rotate(180deg)}
+.ptrack{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:max(20px,calc((100vw - 1240px)/2));padding:6px max(20px,calc((100vw - 1240px)/2)) 22px;scrollbar-width:none;cursor:grab;-webkit-overflow-scrolling:touch}
+.ptrack::-webkit-scrollbar{display:none}
+.ptrack.drag{cursor:grabbing;scroll-snap-type:none}
+.ptrack.drag .ps{pointer-events:none}
+.ps{position:relative;flex:0 0 clamp(272px,28vw,372px);aspect-ratio:4/5.2;border-radius:18px;overflow:hidden;scroll-snap-align:start;border:1px solid var(--line);isolation:isolate;box-shadow:0 40px 70px -40px rgba(0,0,0,.95);user-select:none;-webkit-user-select:none}
+.ps img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.6s var(--out);-webkit-user-drag:none}
+.ps:hover img{transform:scale(1.06)}
+.ps::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(5,3,2,.97) 10%,rgba(5,3,2,.55) 44%,rgba(5,3,2,0) 70%)}
+.ps::after{content:"";position:absolute;inset:10px;border:1px solid rgba(253,244,207,.2);border-radius:11px;pointer-events:none}
+.ps-body{position:absolute;left:0;right:0;bottom:0;padding:24px 24px 26px}
+.ps-n{font-size:11px;font-weight:600;letter-spacing:.28em;color:var(--gold-hi)}
+.ps h3{font-size:21px;margin-top:8px}
+.ps p{font-size:14px;color:var(--cream-dim);margin-top:8px;line-height:1.55}
+.pbar{position:relative;height:1px;background:rgba(238,212,137,.16);margin-top:6px}
+.pbar i{position:absolute;left:0;top:-1px;height:3px;width:20%;border-radius:2px;background:var(--gold-metal);transition:transform .2s linear,width .3s}
+
+/* ---------- tiers ---------- */
+.tiers{padding:clamp(76px,9.5vw,124px) 0;background:radial-gradient(60% 50% at 50% 0%,rgba(193,154,51,.1),transparent 70%),var(--ink-2)}
+.tier-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:880px;margin:0 auto 18px}
+.tier-tab{position:relative;padding:18px 16px;border:1px solid var(--line);border-radius:16px;text-align:center;transition:all .45s var(--out);background:rgba(238,212,137,.02)}
+.tier-tab b{display:block;font-size:17px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.tier-tab span{display:block;font-size:12.6px;color:var(--cream-dimmer);margin-top:4px;font-style:italic}
+.tier-tab:hover{border-color:rgba(238,212,137,.6)}
+.tier-tab[aria-selected="true"]{background:linear-gradient(180deg,rgba(238,212,137,.16),rgba(238,212,137,.04));border-color:var(--gold-hi);box-shadow:0 20px 50px -26px rgba(193,154,51,.55)}
+.tier-tab[aria-selected="true"] b{background:var(--gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tier-panel{max-width:1040px;margin:0 auto;border:1px solid var(--line);border-radius:22px;padding:clamp(26px,3.4vw,46px);background:linear-gradient(160deg,var(--ink-4),var(--ink-3));box-shadow:0 60px 110px -60px rgba(0,0,0,.95);transition:opacity .35s,transform .35s}
+.tier-panel.swap{opacity:0;transform:translateY(10px)}
+.tp-head{display:flex;align-items:center;gap:18px;padding-bottom:22px;border-bottom:1px solid var(--line-2)}
+.tp-head h3{font-size:clamp(24px,2.6vw,32px)}
+.tp-head p{font-style:italic;color:var(--gold-hi);font-size:16px}
+.tp-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);padding-top:24px}
+.tp-cols h4{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-hi);margin-bottom:14px}
+.tp-res{display:grid;gap:14px}
+.tp-res div{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:baseline}
+.tp-res dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-dimmer)}
+.tp-res dd{font-size:15px;color:var(--cream);line-height:1.55}
+.tp-att{list-style:none;display:grid;gap:11px}
+.tp-att li{font-size:15px;color:var(--cream-dim);padding-left:20px;position:relative;line-height:1.55}
+.tp-att li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;transform:rotate(45deg);background:var(--gold)}
+.tp-att li.plus{color:var(--cream);font-style:italic}
+
+/* ---------- departures planner ---------- */
+.dep{padding:clamp(76px,9.5vw,124px) 0;background:linear-gradient(var(--ink-2),var(--ink))}
+.planner{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;align-items:stretch}
+.pl-steps{border:1px solid var(--line);border-radius:22px;padding:clamp(24px,3vw,38px);background:var(--ink-3)}
+.pl-k{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-hi);font-weight:600;margin-bottom:16px}
+.pl-k span{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);font-size:11px;letter-spacing:0}
+.months{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.month h4{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-dim);font-weight:600;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid var(--line-2)}
+.days{display:flex;gap:9px;flex-wrap:wrap}
+.day{width:68px;padding:11px 0 9px;border:1px solid var(--line);border-radius:14px;text-align:center;transition:all .35s var(--out);background:rgba(238,212,137,.02)}
+.day b{display:block;font-size:26px;font-weight:600;line-height:1;font-variant-numeric:lining-nums}
+.day span{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-dimmer);margin-top:5px}
+.day:hover{border-color:rgba(238,212,137,.65);transform:translateY(-2px)}
+.day[aria-pressed="true"]{background:var(--gold-metal);border-color:transparent;color:#1d1408;box-shadow:0 14px 34px -14px rgba(193,154,51,.75)}
+.day[aria-pressed="true"] span{color:#3a2a0e}
+.pl-sep{height:1px;background:var(--line-2);margin:26px 0}
+.jchips{display:flex;flex-wrap:wrap;gap:9px}
+.jchip{padding:10px 16px;border:1px solid var(--line);border-radius:999px;font-size:13.2px;color:var(--cream-dim);transition:all .3s;text-align:left}
+.jchip small{color:var(--cream-dimmer);margin-left:6px;font-size:11.5px}
+.jchip:hover{border-color:rgba(238,212,137,.65);color:var(--cream)}
+.jchip[aria-pressed="true"]{background:rgba(238,212,137,.17);border-color:var(--gold-hi);color:var(--cream)}
+.pl-result{position:relative;border-radius:22px;padding:clamp(26px,3vw,40px);overflow:hidden;isolation:isolate;border:1px solid rgba(238,212,137,.45);display:flex;flex-direction:column;background:var(--ink-3)}
+.pl-result>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.42;transition:opacity .8s}
+.pl-result::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(5,3,2,.96) 30%,rgba(5,3,2,.68))}
+.pl-out{transition:opacity .3s,transform .3s}
+.pl-out.swap{opacity:0;transform:translateY(6px)}
+.pl-dates{font-size:clamp(28px,3vw,38px);font-weight:600;line-height:1.15;background:var(--gold-text);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:6px;font-variant-numeric:lining-nums}
+.pl-result h3{font-size:22px;margin-top:18px}
+.pl-route{font-size:13.6px;color:var(--cream-dim);margin-top:6px}
+.pl-price{margin-top:18px;padding-top:16px;border-top:1px solid var(--line-2);font-size:13px;color:var(--cream-dimmer)}
+.pl-price b{display:block;font-size:26px;color:var(--cream);font-weight:600;font-variant-numeric:lining-nums tabular-nums}
+.pl-result .btn{margin-top:auto;align-self:flex-start}
+.pl-result .pl-cta{margin-top:26px}
+
+/* ---------- notes accordion ---------- */
+.notes{padding:clamp(70px,9vw,112px) 0;background:var(--ink)}
+.notes .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,70px);align-items:start}
+.acc{border-top:1px solid var(--line)}
+.acc details{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:21px 4px;cursor:pointer;font-size:17px;font-weight:500;transition:color .3s}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary:hover{color:var(--gold-hi)}
+.acc summary i{position:relative;width:15px;height:15px;flex:none}
+.acc summary i::before,.acc summary i::after{content:"";position:absolute;left:0;top:7px;width:15px;height:1px;background:var(--gold-hi);transition:transform .4s var(--out)}
+.acc summary i::after{transform:rotate(90deg)}
+.acc details[open] summary i::after{transform:rotate(0)}
+.acc details[open] summary{color:var(--gold-hi)}
+.acc .ans{padding:0 4px 22px;font-size:15px;color:var(--cream-dim);line-height:1.7;max-width:62ch;animation:fadeIn .5s var(--out)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ---------- other chapters ---------- */
+.other{padding:clamp(76px,9.5vw,124px) 0;background:radial-gradient(64% 54% at 50% 8%,rgba(193,154,51,.14),transparent 70%),var(--ink-2);border-top:1px solid var(--line-2)}
+.ogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ocard{position:relative;display:flex;flex-direction:column;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;border:1px solid var(--line);background:var(--ink-3);transition:transform .5s var(--out),border-color .4s,box-shadow .4s;cursor:pointer}
+.ocard:hover{transform:translateY(-6px);border-color:var(--gold-hi);box-shadow:0 34px 66px -30px rgba(0,0,0,.92)}
+.ocard .oimg{position:relative;aspect-ratio:16/10;overflow:hidden;flex:none}
+.ocard .oimg img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--out)}
+.ocard:hover .oimg img{transform:scale(1.07)}
+.ocard .oimg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,3,2,.95),rgba(5,3,2,.1) 62%)}
+.ocard .obody{padding:20px 22px 23px;display:flex;flex-direction:column;flex:1}
+.ocard .onum{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-hi);font-weight:600}
+.ocard h3{font-size:22px;margin:9px 0 0}
+.ocard p{font-size:14px;color:var(--cream-dim);margin-top:9px;line-height:1.58}
+.ocard .ogo{display:inline-flex;align-items:center;gap:8px;margin-top:auto;padding-top:14px;font-size:11.5px;letter-spacing:.17em;text-transform:uppercase;color:var(--gold-hi);font-weight:600}
+.ocard .ogo svg{width:14px;height:14px;transition:transform .35s var(--ease)}
+.ocard:hover .ogo svg{transform:translateX(4px)}
+
+/* ---------- final ---------- */
+.final{padding:clamp(100px,13vw,170px) 0;overflow:hidden;text-align:center;background:radial-gradient(60% 60% at 50% 40%,rgba(193,154,51,.16),transparent 70%),var(--ink-2);border-top:1px solid var(--line-2)}
+.final .wrap{position:relative;display:grid;justify-items:center;gap:16px}
+.final .h2{font-size:clamp(32px,4.4vw,58px)}
+.final .btn{margin-top:14px}
+.contact{display:flex;justify-content:center;margin-top:14px;font-size:14.5px}
+.contact a{display:inline-flex;align-items:center;gap:9px;color:var(--cream-dim);text-decoration:none;transition:color .3s}
+.contact a:hover{color:var(--gold-hi)}
+.contact svg{width:15px;height:15px}
+footer{padding:32px 0 38px;border-top:1px solid var(--line-2);background:var(--ink)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;font-size:12.2px;color:var(--cream-dimmer)}
+footer .logo{width:112px}
+.mcta{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(5,3,2,.96) 32%);display:none;justify-content:center;transform:translateY(130%);transition:transform .45s var(--ease);pointer-events:none}
+.mcta.show{transform:none;pointer-events:auto}
+
+/* ---------- modal ---------- */
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px}
+.modal[hidden]{display:none}
+.modal-backdrop{position:absolute;inset:0;background:rgba(4,2,1,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:fadeIn .4s var(--out)}
+.modal-card{position:relative;width:min(990px,100%);max-height:94svh;overflow:auto;display:grid;grid-template-columns:.72fr 1fr;background:var(--ink-2);border:1px solid var(--line);border-radius:20px;box-shadow:0 60px 120px -40px rgba(0,0,0,.95);overscroll-behavior:contain;animation:rise .6s var(--out)}
+@keyframes rise{from{opacity:0;transform:translateY(24px) scale(.985)}to{opacity:1;transform:none}}
+.modal-close{position:absolute;right:12px;top:12px;z-index:5;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:rgba(5,3,2,.72);border:1px solid var(--line);color:var(--cream)}
+.modal-close:hover{color:var(--gold-hi);border-color:var(--gold-hi)}
+.modal-art{position:relative;overflow:hidden;min-height:100%}
+.modal-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s var(--ease)}
+.modal-art img.on{opacity:1}
+.modal-art::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,3,2,.95),rgba(5,3,2,.2))}
+.modal-art .logo{position:absolute;left:22px;bottom:22px;z-index:2;width:112px;color:var(--gold-hi)}
+.modal-art .art-q{position:absolute;left:22px;right:22px;bottom:64px;z-index:2;font-style:italic;font-size:18px;line-height:1.38;color:var(--cream)}
+.modal-body{padding:clamp(22px,3vw,36px)}
+.modal-body h2{font-size:clamp(23px,2.6vw,31px)}
+.modal-body .lead{color:var(--cream-dim);font-size:14.5px;margin-top:8px}
+.whatis{margin-top:15px;padding:14px 16px;border:1px solid var(--line);border-radius:11px;background:rgba(238,212,137,.05);font-size:13.4px;color:var(--cream-dim);line-height:1.62}
+.whatis b{color:var(--gold-hi);font-weight:600}
+form{display:grid;gap:15px;margin-top:20px}
+.field{display:grid;gap:7px}
+.field > label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-hi);font-weight:600}
+.field .hint{font-size:12.2px;color:var(--cream-dimmer);line-height:1.5}
+.field .hint:empty{display:none}
+input,select{width:100%;padding:12px 14px;background:rgba(242,231,208,.05);border:1px solid var(--line);border-radius:10px;color:var(--cream);font-family:var(--f);font-size:15px;transition:border-color .3s,background .3s}
+select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23eed489' stroke-width='1.6'><path d='M6 9l6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 12px center;background-size:17px;padding-right:38px}
+select option,select optgroup{background:#110b07;color:#f7eed9}
+select optgroup{color:#eed489;font-style:normal}
+input:focus,select:focus{outline:none;border-color:var(--gold-hi);background:rgba(242,231,208,.08)}
+.phone{display:grid;grid-template-columns:102px 1fr;gap:9px}
+.consent{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:start;font-size:13.2px;color:var(--cream-dim);line-height:1.5;cursor:pointer}
+.consent input{width:17px;height:17px;margin-top:2px;accent-color:var(--gold)}
+.err{color:#e9a08a;font-size:12.4px}
+.err:empty{display:none}
+.privacy{font-size:12.2px;color:var(--cream-dimmer);text-align:center}
+.optional{color:var(--cream-dimmer);letter-spacing:.04em;text-transform:none;font-size:11px;font-weight:400}
+.lead-success{display:grid;gap:13px;text-align:center;padding:12px 0}
+.dl-list{display:grid;gap:10px;margin-top:4px}
+.dl-list a{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 17px;border:1px solid var(--line);border-radius:11px;text-decoration:none;font-size:14.2px;color:var(--cream);transition:all .3s;text-align:left}
+.dl-list a:hover{border-color:var(--gold-hi);background:rgba(238,212,137,.09)}
+.dl-list a span{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-hi);white-space:nowrap}
+
+
+/* =========================================================================
+   Ramayan Adhyay additions, built on the same system as the Kashi page
+   ========================================================================= */
+.cities-art.three{grid-template-columns:repeat(3,1fr)}
+
+/* journeys stage: chapter picker, length, parts */
+.chpick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 22px}
+.chpick button{padding:11px 10px;border:1px solid var(--line);border-radius:14px;font-size:13.4px;color:var(--cream-dim);transition:all .3s;text-align:center;line-height:1.3;background:rgba(238,212,137,.02)}
+.chpick button small{display:block;font-size:10px;letter-spacing:.24em;color:var(--gold-hi);margin-bottom:3px}
+.chpick button:hover{border-color:rgba(238,212,137,.65);color:var(--cream)}
+.chpick button[aria-pressed="true"]{background:linear-gradient(180deg,rgba(238,212,137,.18),rgba(238,212,137,.05));border-color:var(--gold-hi);color:var(--cream);font-weight:600}
+.st-row{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end}
+.st-row .seg{margin-top:10px}
+.st-k span{display:block;margin-top:4px;font-size:12px;letter-spacing:.02em;text-transform:none;color:var(--cream-dimmer);font-weight:400;font-style:italic}
+.st-parts{margin-top:22px}
+.st-parts[hidden]{display:none}
+.route.parts{grid-template-columns:repeat(3,1fr);margin:16px 0 0}
+.route.parts::before{left:16.67%;right:16.67%}
+.route.parts .rfill{left:16.67%;transition:left .6s var(--out),width .6s var(--out)}
+.route .node{background:none;border:0;font:inherit;font-size:11px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;padding:0 4px 4px;line-height:1.35}
+.route .node small{display:block;font-size:11.5px;letter-spacing:.02em;text-transform:none;font-style:italic;color:var(--cream-dimmer);margin-top:2px}
+.route .node:hover i{border-color:var(--gold-hi)}
+.route .node[aria-pressed="true"]{color:var(--cream)}
+.route .node[aria-pressed="true"] i{background:var(--gold-hi);border-color:var(--gold-hi);box-shadow:0 0 0 4px rgba(238,212,137,.14),0 0 16px rgba(238,212,137,.7)}
+.jd-days{list-style:none;display:grid;gap:12px;margin-top:16px;counter-reset:d}
+.jd-days li{position:relative;padding-left:18px;font-size:14.4px;color:var(--cream-dim);line-height:1.6}
+.jd-days li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;transform:rotate(45deg);background:var(--gold)}
+.jd-days li b{display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi);margin-bottom:2px}
+.jd .jd-meta{margin-top:6px}
+.elevate button.tlink{cursor:pointer}
+
+/* prices at a glance */
+.pricegrid{max-width:1040px;margin:26px auto 0;border:1px solid var(--line);border-radius:22px;padding:clamp(22px,3vw,36px);background:var(--ink-3)}
+.pg-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;margin-bottom:14px}
+.pg-head h3{font-size:clamp(21px,2.2vw,26px)}
+.pg-head p{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-hi)}
+.pg-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.pg{width:100%;border-collapse:collapse;min-width:560px;font-variant-numeric:lining-nums tabular-nums}
+.pg thead th{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-hi);font-weight:600;text-align:right;padding:10px 12px;border-bottom:1px solid var(--line)}
+.pg thead th:first-child{text-align:left;padding-left:0}
+.pg tbody th{font-size:14.4px;font-weight:400;color:var(--cream);text-align:left;padding:12px 12px 12px 0;border-bottom:1px solid var(--line-2)}
+.pg td{font-size:15.5px;color:var(--cream);text-align:right;padding:12px;border-bottom:1px solid var(--line-2);white-space:nowrap}
+.pg td small{font-size:11px;color:var(--cream-dimmer)}
+.pg tr.grp th{padding:20px 0 8px;border-bottom:0;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-hi);font-weight:600}
+.pg tbody tr:first-child.grp th{padding-top:12px}
+.pg tbody tr:not(.grp):hover{background:rgba(238,212,137,.04)}
+.pg-note{margin-top:16px;font-size:13px;color:var(--cream-dimmer);line-height:1.6}
+
+/* departures */
+.pl-note{font-size:13.4px;color:var(--cream-dim);margin-top:8px;line-height:1.55}
+.pl-note:empty{display:none}
+.jchips{margin-bottom:2px}
+.inl{font-size:inherit;color:var(--gold-hi);border-bottom:1px solid rgba(238,212,137,.45);padding:0;cursor:pointer}
+.inl:hover{border-color:var(--gold-hi)}
+
+/* final + contact */
+.contact{flex-wrap:wrap;gap:10px 26px}
+
+/* form */
+.field[hidden]{display:none}
+input::placeholder{color:var(--cream-dimmer)}
+#f-submit{width:100%}
+.planner .months{grid-template-columns:repeat(2,1fr);gap:16px 22px}
+
+/* hospitality: three compact tiers */
+.hs-bar{display:flex;justify-content:center;margin:0 auto 26px}
+.hs-bar .jchips{justify-content:center}
+.hs-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1080px;margin:0 auto;transition:opacity .3s,transform .3s}
+.hs-cards.swap{opacity:0;transform:translateY(8px)}
+.hs-card{position:relative;display:flex;flex-direction:column;padding:30px 28px 26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(165deg,var(--ink-4),var(--ink-3));box-shadow:0 40px 80px -50px rgba(0,0,0,.9)}
+.hs-card::before{content:"";position:absolute;left:28px;right:28px;top:-1px;height:1px;background:linear-gradient(90deg,transparent,rgba(238,212,137,.6),transparent)}
+.hs-card.sig{border-color:rgba(238,212,137,.4);background:linear-gradient(165deg,rgba(238,212,137,.09),var(--ink-3) 62%)}
+.hs-card h3{display:inline-block;align-self:flex-start;font-size:15px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;background:var(--gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hs-line{font-style:italic;color:var(--cream);font-size:17px;line-height:1.45;margin:10px 0 18px;min-height:2.9em}
+.hs-card ul{list-style:none;display:grid;align-content:start;gap:10px;padding:0 0 20px;margin:0 0 18px;border-bottom:1px solid var(--line-2);flex:1}
+.hs-card li{position:relative;padding-left:18px;font-size:14.4px;color:var(--cream-dim);line-height:1.5}
+.hs-card li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;transform:rotate(45deg);background:var(--gold)}
+.hs-price{display:grid;gap:8px;margin:0}
+.hs-price div{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.hs-price dt{font-size:12.8px;color:var(--cream-dimmer)}
+.hs-price dd{margin:0;font-size:17px;color:var(--cream);white-space:nowrap}
+.hs-price .more dt,.hs-price .more dd{font-size:12.8px;color:var(--cream-dimmer)}
+.hs-fine{text-align:center;font-size:13px;color:var(--cream-dimmer);max-width:76ch;margin:22px auto 0;line-height:1.65}
+@media (max-width:900px){
+  .hs-cards{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(270px,84%);overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:4px 20px 14px;scrollbar-width:none}
+  .hs-cards::-webkit-scrollbar{display:none}
+  .hs-card{scroll-snap-align:center;padding:26px 22px 22px}
+  .hs-line{min-height:0;font-size:16px}
+  .hs-bar{margin-bottom:20px}
+  .hs-bar .jchip{padding:9px 12px;font-size:12.6px}
+  .hs-bar .jchips{gap:7px;flex-wrap:nowrap}
+  .hs-fine{margin-top:12px;text-align:left}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .rv,.split .w>span{opacity:1;transform:none}
+  .reveal-img img{clip-path:none;transform:none}.draw{transform:none}
+}
+@media (max-width:1180px){.nav-links{gap:18px;font-size:10.5px}}
+@media (max-width:1080px){.nav-links{display:none}}
+@media (max-width:1000px){
+  .clarity .wrap,.notes .wrap{grid-template-columns:1fr}
+  .cities-art{grid-template-columns:repeat(2,1fr);margin-top:clamp(-56px,-5vw,-30px)}
+  .stage{grid-template-columns:1fr}
+  .stage-art{min-height:340px}
+  .stage-art::after{background:linear-gradient(to top,rgba(5,3,2,.9),transparent 55%)}
+  .special,.tirths,.practices,.ogrid{grid-template-columns:1fr}
+  .elevate{grid-template-columns:1fr}
+  .jain-intro{grid-template-columns:1fr}
+  .jain-facts{justify-content:flex-start}.jain-facts div{text-align:left}
+  .planner{grid-template-columns:1fr}
+  .tp-cols{grid-template-columns:1fr}
+  .modal-card{grid-template-columns:1fr}
+  .modal-art{min-height:150px;max-height:150px}
+  .modal-art .art-q{display:none}
+  .modal-art .logo{bottom:14px;width:100px}
+  .bk-nav.prev{left:4px}.bk-nav.next{right:4px}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .mcta{display:flex}
+  main{padding-bottom:0}
+  footer{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+  .cities-art{gap:11px;margin-top:24px}
+  /* Consistent, tighter vertical rhythm on mobile */
+  .clarity,.manifesto,.bookzone,.journeys,.promise,.tiers,.dep,.notes,.final,.other{padding-top:56px;padding-bottom:56px}
+  .citystrip{padding-bottom:56px}
+  .hero{padding:104px 0 64px}
+  .hero-mark{width:168px}
+  .hero-tag{letter-spacing:.3em;font-size:9.5px}
+  .promise .sec-head{grid-template-columns:1fr}
+  .arrows{display:none}
+  .months{grid-template-columns:1fr}
+  .tier-tabs{gap:8px}
+  .tier-tab{padding:13px 8px}
+  .tier-tab b{font-size:13px;letter-spacing:.1em}
+  .tier-tab span{display:none}
+  .tp-res div{grid-template-columns:1fr;gap:2px}
+  .sp{min-height:420px}
+  .book{padding-bottom:58px}
+  .bk-inner{grid-template-columns:1fr;min-height:0}
+  .bk-left{border-radius:10px 10px 0 0;padding:21px 19px 6px}
+  .bk-right{border-radius:0 0 10px 10px;padding:0 19px 22px}
+  .bk-spine{display:none}
+  .bk-page h3,.leaf .face h3{font-size:29px}
+  .bk-quote{font-size:16px;margin:11px 0 13px}
+  .bk-fig{aspect-ratio:16/10}
+  .bk-nav{width:42px;height:42px;top:auto;bottom:2px;transform:none;font-size:19px}
+  .bk-nav.prev{left:calc(50% - 54px)}.bk-nav.next{right:calc(50% - 54px)}
+  .bk-foot{margin-top:14px}
+  .booktabs{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;gap:6px;padding:0 2px 5px;scrollbar-width:none}
+  .booktabs::-webkit-scrollbar{display:none}
+  .booktabs button{padding:7px 14px;font-size:11.5px;flex:none}
+  .route .node{font-size:9.5px;letter-spacing:.06em}
+}
+@media (max-width:1000px){
+  .cities-art.three{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:600px){
+  .cities-art.three{grid-template-columns:1fr 1fr}
+  .cities-art.three .ca:last-child{grid-column:span 2;aspect-ratio:16/9}
+  .chpick{gap:6px}
+  .chpick button{font-size:12px;padding:10px 6px}
+  .route .node{font-size:9.5px;letter-spacing:.06em}
+  .route .node small{font-size:10.5px}
+  .jd-days li{font-size:14px}
+  .contact{flex-direction:column;align-items:center;gap:10px}
+}
+@media (max-width:760px){
+  .planner .months{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  .pg{min-width:0}
+  .pg thead{display:none}
+  .pg tbody tr:not(.grp){display:grid;grid-template-columns:repeat(3,1fr);gap:4px 10px;padding:12px 0;border-bottom:1px solid var(--line-2)}
+  .pg tbody tr:not(.grp) th{grid-column:1/-1;border:0;padding:0 0 4px}
+  .pg td{border:0;padding:0;text-align:left;font-size:14.5px}
+  .pg td::before{content:attr(data-l);display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-hi);margin-bottom:2px}
+  .pg td small{display:none}
+  .pg tr.grp th{padding:18px 0 2px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="m3.5 7 8.5 6 8.5-6" stroke="currentColor" stroke-width="1.5" fill="none"/></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12M7 11l5 5 5-5M5 20h14" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-lotus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 5c2.3 2.6 3.2 6 2.4 10.6L12 18l-2.4-2.4C8.8 11 9.7 7.6 12 5z"/><path d="M9.6 15.6C7.2 15 5 13.3 3.6 10.8c2.7-.3 5 .4 6.4 1.8M14.4 15.6c2.4-.6 4.6-2.3 6-4.8-2.7-.3-5 .4-6.4 1.8"/><path d="M4 18.5c2.4 1 5 1.5 8 1.5s5.6-.5 8-1.5"/></g></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5.5C5.5 4.5 9 4.5 12 6.5c3-2 6.5-2 9-1v13c-2.5-1-6-1-9 1-3-2-6.5-2-9-1zM12 6.5v13" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+<symbol id="i-diya" viewBox="0 0 24 24"><path d="M3.5 13.5h17c0 3.3-3.8 5.5-8.5 5.5s-8.5-2.2-8.5-5.5zM12 11.5c-1.7-1.1-2.2-2.8-1.4-4.6.5-1 1.4-1.8 1.4-3.4 1.6 1.3 2.6 3 2.2 5-.2 1.3-1 2.3-2.2 3z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+<symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 11.5h18c0 4.4-4 7.5-9 7.5s-9-3.1-9-7.5zM9.5 8.5c0-1.2 1-1.6 1-2.8S9.5 4 9.5 4M14.5 8.5c0-1.2 1-1.6 1-2.8S14.5 4 14.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="mandala" viewBox="-100 -100 200 200"><g fill="none" stroke="currentColor" stroke-width=".32"><circle r="98"/><circle r="90"/><circle r="62"/><circle r="40"/><circle r="18"/><circle r="7"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(0.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(15.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(30.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(45.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(60.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(75.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(90.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(105.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(120.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(135.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(150.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(165.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(180.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(195.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(210.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(225.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(240.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(255.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(270.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(285.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(300.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(315.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(330.00)"/><path d="M0,-90 C9,-80.2 9.9,-69.0 0,-62 C-9.9,-69.0 -9,-80.2 0,-90Z" transform="rotate(345.00)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(0.00)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(22.50)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(45.00)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(67.50)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(90.00)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(112.50)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(135.00)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(157.50)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(180.00)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(202.50)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(225.00)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(247.50)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(270.00)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(292.50)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(315.00)"/><path d="M0,-62 C8,-54.3 8.8,-45.5 0,-40 C-8.8,-45.5 -8,-54.3 0,-62Z" transform="rotate(337.50)"/><path d="M0,-40 C9,-32.3 9.9,-23.5 0,-18 C-9.9,-23.5 -9,-32.3 0,-40Z" transform="rotate(0.00)"/><path d="M0,-40 C9,-32.3 9.9,-23.5 0,-18 C-9.9,-23.5 -9,-32.3 0,-40Z" transform="rotate(45.00)"/><path d="M0,-40 C9,-32.3 9.9,-23.5 0,-18 C-9.9,-23.5 -9,-32.3 0,-40Z" transform="rotate(90.00)"/><path d="M0,-40 C9,-32.3 9.9,-23.5 0,-18 C-9.9,-23.5 -9,-32.3 0,-40Z" transform="rotate(135.00)"/><path d="M0,-40 C9,-32.3 9.9,-23.5 0,-18 C-9.9,-23.5 -9,-32.3 0,-40Z" transform="rotate(180.00)"/><path d="M0,-40 C9,-32.3 9.9,-23.5 0,-18 C-9.9,-23.5 -9,-32.3 0,-40Z" transform="rotate(225.00)"/><path d="M0,-40 C9,-32.3 9.9,-23.5 0,-18 C-9.9,-23.5 -9,-32.3 0,-40Z" transform="rotate(270.00)"/><path d="M0,-40 C9,-32.3 9.9,-23.5 0,-18 C-9.9,-23.5 -9,-32.3 0,-40Z" transform="rotate(315.00)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(0)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(22)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(44)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(66)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(88)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(110)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(132)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(154)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(176)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(198)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(220)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(242)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(264)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(286)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(308)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(330)"/><line x1="0" y1="-9" x2="0" y2="-18" transform="rotate(352)"/></g><g fill="currentColor"><circle cx="0.00" cy="-94.00" r=".9"/><circle cx="9.83" cy="-93.49" r=".9"/><circle cx="19.54" cy="-91.95" r=".9"/><circle cx="29.05" cy="-89.40" r=".9"/><circle cx="38.23" cy="-85.87" r=".9"/><circle cx="47.00" cy="-81.41" r=".9"/><circle cx="55.25" cy="-76.05" r=".9"/><circle cx="62.90" cy="-69.86" r=".9"/><circle cx="69.86" cy="-62.90" r=".9"/><circle cx="76.05" cy="-55.25" r=".9"/><circle cx="81.41" cy="-47.00" r=".9"/><circle cx="85.87" cy="-38.23" r=".9"/><circle cx="89.40" cy="-29.05" r=".9"/><circle cx="91.95" cy="-19.54" r=".9"/><circle cx="93.49" cy="-9.83" r=".9"/><circle cx="94.00" cy="-0.00" r=".9"/><circle cx="93.49" cy="9.83" r=".9"/><circle cx="91.95" cy="19.54" r=".9"/><circle cx="89.40" cy="29.05" r=".9"/><circle cx="85.87" cy="38.23" r=".9"/><circle cx="81.41" cy="47.00" r=".9"/><circle cx="76.05" cy="55.25" r=".9"/><circle cx="69.86" cy="62.90" r=".9"/><circle cx="62.90" cy="69.86" r=".9"/><circle cx="55.25" cy="76.05" r=".9"/><circle cx="47.00" cy="81.41" r=".9"/><circle cx="38.23" cy="85.87" r=".9"/><circle cx="29.05" cy="89.40" r=".9"/><circle cx="19.54" cy="91.95" r=".9"/><circle cx="9.83" cy="93.49" r=".9"/><circle cx="0.00" cy="94.00" r=".9"/><circle cx="-9.83" cy="93.49" r=".9"/><circle cx="-19.54" cy="91.95" r=".9"/><circle cx="-29.05" cy="89.40" r=".9"/><circle cx="-38.23" cy="85.87" r=".9"/><circle cx="-47.00" cy="81.41" r=".9"/><circle cx="-55.25" cy="76.05" r=".9"/><circle cx="-62.90" cy="69.86" r=".9"/><circle cx="-69.86" cy="62.90" r=".9"/><circle cx="-76.05" cy="55.25" r=".9"/><circle cx="-81.41" cy="47.00" r=".9"/><circle cx="-85.87" cy="38.23" r=".9"/><circle cx="-89.40" cy="29.05" r=".9"/><circle cx="-91.95" cy="19.54" r=".9"/><circle cx="-93.49" cy="9.83" r=".9"/><circle cx="-94.00" cy="0.00" r=".9"/><circle cx="-93.49" cy="-9.83" r=".9"/><circle cx="-91.95" cy="-19.54" r=".9"/><circle cx="-89.40" cy="-29.05" r=".9"/><circle cx="-85.87" cy="-38.23" r=".9"/><circle cx="-81.41" cy="-47.00" r=".9"/><circle cx="-76.05" cy="-55.25" r=".9"/><circle cx="-69.86" cy="-62.90" r=".9"/><circle cx="-62.90" cy="-69.86" r=".9"/><circle cx="-55.25" cy="-76.05" r=".9"/><circle cx="-47.00" cy="-81.41" r=".9"/><circle cx="-38.23" cy="-85.87" r=".9"/><circle cx="-29.05" cy="-89.40" r=".9"/><circle cx="-19.54" cy="-91.95" r=".9"/><circle cx="-9.83" cy="-93.49" r=".9"/></g></symbol>
+<symbol id="adhyay-logo" viewBox="0 0 820 210"><g transform="translate(-13.34,-193.09)"><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 317.964844 218.839844 C 319.902344 217.863281 356.503906 217.882812 358.644531 218.601562 C 357.898438 218.828125 357.429688 219.03125 356.941406 219.105469 C 354.316406 219.507812 352.183594 220.824219 350.871094 223.042969 C 349.617188 225.160156 348.5 227.441406 347.835938 229.792969 C 347.148438 232.234375 346.804688 234.847656 346.785156 237.390625 C 346.683594 250.3125 346.734375 263.234375 346.738281 276.160156 C 346.738281 276.710938 346.796875 277.261719 346.824219 277.789062 C 348.578125 278.285156 408.457031 278.453125 412.128906 277.957031 C 412.128906 277.21875 412.128906 276.4375 412.128906 275.65625 C 412.128906 263.292969 412.136719 250.933594 412.125 238.570312 C 412.121094 234.277344 411.539062 230.058594 409.679688 226.152344 C 408.902344 224.511719 407.796875 222.992188 406.632812 221.582031 C 405.546875 220.261719 404.015625 219.492188 402.289062 219.183594 C 401.675781 219.074219 401.082031 218.886719 400.46875 218.382812 C 400.960938 218.273438 401.453125 218.070312 401.945312 218.070312 C 414.476562 218.050781 427.011719 218.050781 439.542969 218.066406 C 440.046875 218.066406 440.550781 218.234375 441.070312 218.667969 C 440.738281 218.792969 440.410156 218.984375 440.066406 219.023438 C 436.449219 219.449219 434.125 221.613281 432.4375 224.640625 C 430.808594 227.566406 430.042969 230.757812 429.679688 234.046875 C 429.476562 235.875 429.390625 237.730469 429.390625 239.574219 C 429.375 268.226562 429.375 296.882812 429.378906 325.539062 C 429.378906 329.570312 429.632812 333.585938 431.085938 337.386719 C 431.765625 339.164062 432.675781 340.898438 433.75 342.46875 C 435.210938 344.609375 437.332031 345.875 439.980469 346.128906 C 440.339844 346.160156 440.691406 346.300781 441.023438 346.390625 C 440.996094 346.617188 441.003906 346.703125 440.972656 346.773438 C 440.945312 346.832031 440.878906 346.910156 440.824219 346.910156 C 428.058594 346.960938 415.289062 347.003906 402.523438 347.042969 C 401.964844 347.042969 401.402344 347 400.847656 346.9375 C 400.75 346.929688 400.671875 346.738281 400.46875 346.496094 C 400.761719 346.363281 401.003906 346.171875 401.261719 346.152344 C 404.625 345.914062 406.875 343.992188 408.589844 341.296875 C 410.570312 338.179688 411.449219 334.683594 411.84375 331.066406 C 412.046875 329.234375 412.113281 327.382812 412.113281 325.539062 C 412.136719 311.972656 412.128906 298.40625 412.125 284.84375 C 412.125 284.132812 412.058594 283.417969 412.023438 282.746094 C 410.222656 282.203125 349.855469 282.066406 346.902344 282.59375 C 346.847656 283.171875 346.742188 283.789062 346.742188 284.40625 C 346.738281 298.695312 346.734375 312.980469 346.757812 327.269531 C 346.765625 330.988281 347.277344 334.660156 348.691406 338.105469 C 349.414062 339.859375 350.4375 341.539062 351.582031 343.058594 C 352.929688 344.839844 354.863281 345.84375 357.128906 346.113281 C 357.507812 346.160156 357.875 346.296875 358.242188 346.410156 C 358.28125 346.421875 358.285156 346.542969 358.300781 346.613281 C 356.566406 347.195312 320.183594 347.246094 317.894531 346.640625 C 318.09375 346.460938 318.238281 346.21875 318.394531 346.207031 C 322.457031 345.90625 324.945312 343.476562 326.699219 340.082031 C 328.578125 336.441406 329.199219 332.488281 329.445312 328.457031 C 329.492188 327.738281 329.476562 327.015625 329.476562 326.289062 C 329.476562 297.152344 329.472656 268.019531 329.480469 238.878906 C 329.480469 235.164062 329.144531 231.484375 327.867188 227.984375 C 327.214844 226.195312 326.304688 224.457031 325.25 222.871094 C 323.871094 220.792969 321.859375 219.484375 319.320312 219.117188 C 318.867188 219.050781 318.417969 218.933594 317.964844 218.839844 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 201.566406 342.929688 C 202.21875 342.996094 202.609375 343.074219 202.996094 343.074219 C 210.382812 343.078125 217.773438 343.238281 225.15625 343.03125 C 235.015625 342.753906 243.863281 339.566406 251.402344 333.070312 C 258.066406 327.332031 262.667969 320.15625 265.804688 312.03125 C 271.566406 297.113281 272.535156 281.765625 269.441406 266.144531 C 267.488281 256.261719 263.859375 247.058594 257.625 239.042969 C 249 227.957031 237.671875 222.210938 223.546875 222.179688 C 217.121094 222.167969 210.699219 222.175781 204.277344 222.175781 L 201.566406 222.175781 Z M 277.410156 242.550781 C 280.96875 247.386719 283.800781 252.871094 285.894531 258.992188 C 291.070312 274.101562 291.304688 289.460938 286.378906 304.644531 C 279.394531 326.15625 264.476562 339.40625 242.644531 344.972656 C 237.183594 346.367188 231.601562 347.039062 225.957031 347.042969 C 208.851562 347.050781 191.746094 347.046875 174.640625 347.039062 C 173.964844 347.039062 173.292969 346.949219 172.535156 346.507812 C 172.769531 346.386719 172.996094 346.175781 173.238281 346.15625 C 176.695312 345.878906 178.957031 343.847656 180.671875 341.058594 C 182.605469 337.917969 183.414062 334.40625 183.832031 330.796875 C 183.988281 329.445312 184.046875 328.074219 184.046875 326.710938 C 184.058594 297.34375 184.089844 267.976562 184.007812 238.605469 C 183.996094 235.589844 183.492188 232.535156 182.859375 229.574219 C 182.449219 227.65625 181.550781 225.78125 180.578125 224.050781 C 179.0625 221.351562 176.8125 219.488281 173.601562 219.050781 C 173.234375 219 172.882812 218.820312 172.375 218.652344 C 173.226562 217.753906 174.15625 218.058594 174.972656 218.058594 C 187.097656 218.039062 199.226562 218.042969 211.351562 218.046875 C 216.171875 218.046875 220.992188 217.953125 225.808594 218.074219 C 235.601562 218.320312 245.121094 220.007812 254.109375 224.074219 C 263.804688 228.460938 271.585938 234.636719 277.410156 242.550781 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 637.628906 239.339844 C 627.957031 260.234375 618.539062 280.574219 609.007812 301.164062 L 662.921875 301.164062 C 654.515625 280.621094 646.1875 260.265625 637.628906 239.339844 M 611.273438 346.914062 L 571.820312 346.914062 C 572.339844 346.28125 572.546875 345.820312 572.894531 345.660156 C 573.308594 345.472656 573.84375 345.566406 574.320312 345.503906 C 578.417969 344.960938 581.84375 343.046875 584.375 339.871094 C 586.71875 336.9375 589.035156 333.878906 590.742188 330.558594 C 595.285156 321.710938 599.628906 312.753906 603.816406 303.734375 C 616.691406 276.007812 629.457031 248.226562 642.265625 220.46875 C 642.601562 219.742188 642.960938 219.03125 643.292969 218.339844 C 643.597656 218.238281 643.8125 218.109375 644.039062 218.097656 C 647.191406 217.921875 647.191406 217.921875 648.429688 220.820312 C 663.953125 257.199219 679.476562 293.582031 695.007812 329.960938 C 696.078125 332.464844 697.25 334.929688 698.328125 337.429688 C 700.238281 341.863281 703.613281 344.378906 708.34375 345.109375 C 709.363281 345.265625 710.351562 345.292969 709.824219 346.902344 L 668.546875 346.902344 C 668.175781 345.792969 668.476562 345.273438 669.574219 345.199219 C 670.527344 345.132812 671.503906 345.0625 672.425781 344.828125 C 676.488281 343.792969 678.285156 340.890625 677.238281 336.855469 C 676.757812 335.003906 675.992188 333.21875 675.269531 331.4375 C 671.890625 323.109375 668.484375 314.796875 665.085938 306.476562 C 664.96875 306.1875 664.8125 305.910156 664.539062 305.359375 L 662.027344 305.359375 C 644.589844 305.359375 627.15625 305.390625 609.722656 305.3125 C 607.75 305.304688 606.75 305.894531 605.925781 307.722656 C 603.289062 313.574219 600.386719 319.3125 599.113281 325.675781 C 598.476562 328.839844 598.082031 332.015625 598.601562 335.238281 C 599.554688 341.140625 603.085938 344.472656 609.050781 345.101562 C 609.527344 345.15625 610.011719 345.152344 610.492188 345.207031 C 611.542969 345.320312 611.523438 346.003906 611.273438 346.914062 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 79.066406 239.347656 C 69.390625 260.257812 59.9375 280.578125 50.46875 301.175781 L 104.367188 301.175781 C 95.949219 280.59375 87.617188 260.234375 79.066406 239.347656 M 151.355469 346.929688 L 109.933594 346.929688 C 109.648438 345.894531 109.804688 345.324219 110.925781 345.199219 C 112.195312 345.058594 113.5 344.960938 114.707031 344.582031 C 117.597656 343.683594 119.03125 341.617188 118.855469 338.589844 C 118.785156 337.332031 118.527344 336.023438 118.058594 334.855469 C 114.359375 325.621094 110.550781 316.433594 106.871094 307.1875 C 106.289062 305.722656 105.480469 305.332031 104.003906 305.332031 C 86.171875 305.375 68.335938 305.359375 50.5 305.355469 C 49.441406 305.355469 48.503906 305.320312 47.925781 306.578125 C 45.300781 312.34375 42.332031 317.96875 40.886719 324.203125 C 40.070312 327.730469 39.484375 331.277344 40.007812 334.929688 C 40.882812 341.046875 44.480469 344.527344 50.660156 345.117188 C 51.140625 345.160156 51.628906 345.144531 52.105469 345.21875 C 52.988281 345.355469 53.003906 345.972656 52.84375 346.664062 C 51.074219 347.160156 16.023438 347.226562 13.335938 346.644531 C 13.878906 346.183594 14.199219 345.667969 14.554688 345.644531 C 20.957031 345.246094 25.246094 341.515625 28.511719 336.5 C 31.089844 332.542969 33.539062 328.453125 35.5625 324.191406 C 43.476562 307.519531 51.230469 290.773438 58.992188 274.03125 C 67.191406 256.34375 75.339844 238.628906 83.507812 220.925781 C 84.964844 217.769531 84.960938 217.769531 88.71875 218.28125 C 89.074219 219.074219 89.476562 219.9375 89.855469 220.816406 C 105.316406 257.050781 120.773438 293.285156 136.242188 329.511719 C 137.375 332.164062 138.648438 334.757812 139.777344 337.414062 C 141.667969 341.871094 145.058594 344.34375 149.773438 345.121094 C 151.226562 345.363281 151.226562 345.355469 151.355469 346.929688 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 710.941406 218.140625 L 748.996094 218.140625 C 749.453125 219.144531 749.449219 219.808594 748.117188 219.929688 C 747.320312 220 746.515625 220.097656 745.738281 220.289062 C 743.160156 220.917969 741.925781 222.632812 742.386719 225.257812 C 742.621094 226.574219 743.167969 227.867188 743.753906 229.082031 C 752.699219 247.566406 761.675781 266.039062 770.644531 284.511719 C 771.90625 287.109375 773.160156 289.710938 774.4375 292.304688 C 774.707031 292.855469 775.070312 293.363281 775.5 294.074219 C 776.003906 293.144531 776.398438 292.453125 776.753906 291.742188 C 783.464844 278.414062 790.179688 265.089844 796.871094 251.753906 C 799.585938 246.332031 801.6875 240.699219 801.910156 234.570312 C 801.988281 232.511719 801.8125 230.378906 801.324219 228.382812 C 800.195312 223.78125 797.027344 221.199219 792.433594 220.316406 C 791.261719 220.089844 790.066406 219.984375 788.863281 219.820312 C 788.410156 218.671875 788.605469 218.035156 789.898438 218.046875 C 790.300781 218.050781 790.699219 218.046875 791.101562 218.046875 C 802.667969 218.042969 814.234375 218.035156 825.800781 218.066406 C 826.597656 218.070312 827.964844 217.566406 828.078125 218.664062 C 828.226562 220.097656 826.707031 219.621094 825.886719 219.730469 C 822.746094 220.164062 819.957031 221.394531 817.816406 223.675781 C 815.800781 225.828125 813.761719 228.085938 812.3125 230.625 C 808.546875 237.246094 804.984375 243.988281 801.542969 250.78125 C 793.789062 266.097656 786.175781 281.484375 778.453125 296.816406 C 777.597656 298.515625 777.199219 300.195312 777.21875 302.097656 C 777.285156 309.960938 777.246094 317.828125 777.246094 325.691406 C 777.25 329.320312 777.566406 332.925781 778.703125 336.378906 C 779.324219 338.261719 780.183594 340.117188 781.238281 341.796875 C 782.847656 344.347656 785.171875 345.992188 788.335938 346.160156 C 788.550781 346.171875 788.757812 346.339844 789.320312 346.59375 C 788.636719 346.804688 788.257812 347.027344 787.878906 347.027344 C 775.105469 347.046875 762.335938 347.042969 749.566406 347.035156 C 749.210938 347.035156 748.859375 346.933594 748.429688 346.5 C 748.660156 346.382812 748.886719 346.183594 749.128906 346.164062 C 752.789062 345.902344 755.164062 343.777344 756.886719 340.777344 C 758.84375 337.363281 759.808594 333.59375 759.871094 329.722656 C 760.039062 319.535156 759.996094 309.34375 759.972656 299.152344 C 759.96875 298.320312 759.605469 297.429688 759.214844 296.667969 C 747.375 273.710938 735.511719 250.761719 723.652344 227.8125 C 721.394531 223.4375 717.847656 220.855469 712.96875 220.121094 C 712.492188 220.046875 712.007812 220.007812 711.542969 219.886719 C 711.015625 219.753906 711.023438 219.722656 710.941406 218.140625 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 526.820312 294.175781 C 529.34375 289.164062 531.679688 284.507812 534.019531 279.855469 C 538.816406 270.320312 543.632812 260.800781 548.398438 251.25 C 551.035156 245.96875 553.019531 240.464844 553.203125 234.496094 C 553.269531 232.4375 553.105469 230.300781 552.601562 228.308594 C 551.445312 223.714844 548.253906 221.164062 543.65625 220.304688 C 542.789062 220.140625 541.90625 220.050781 541.03125 219.957031 C 539.851562 219.839844 539.78125 219.195312 540.222656 218.191406 L 579.363281 218.191406 C 579.742188 219.582031 578.8125 219.507812 578.050781 219.691406 C 576.269531 220.125 574.425781 220.433594 572.753906 221.132812 C 570.101562 222.242188 568.011719 224.226562 566.433594 226.566406 C 563.929688 230.285156 561.390625 234.027344 559.359375 238.015625 C 550.105469 256.167969 541.128906 274.46875 531.796875 292.582031 C 529.441406 297.15625 528.234375 301.65625 528.472656 306.792969 C 528.769531 313.121094 528.527344 319.472656 528.550781 325.8125 C 528.5625 329.273438 528.820312 332.730469 529.910156 336.03125 C 530.554688 337.992188 531.402344 339.9375 532.476562 341.695312 C 534.046875 344.269531 536.351562 345.945312 539.515625 346.148438 C 539.785156 346.167969 540.046875 346.339844 540.457031 346.492188 C 538.625 347.207031 501.96875 347.273438 499.550781 346.570312 C 499.972656 346.371094 500.214844 346.171875 500.46875 346.15625 C 504.128906 345.882812 506.503906 343.753906 508.199219 340.738281 C 510.292969 337.015625 511.132812 332.933594 511.230469 328.71875 C 511.34375 323.664062 511.296875 318.605469 511.308594 313.550781 C 511.316406 309.054688 511.363281 304.558594 511.273438 300.066406 C 511.25 298.910156 511.003906 297.648438 510.480469 296.632812 C 498.695312 273.730469 486.851562 250.859375 475.042969 227.972656 C 472.695312 223.417969 469.042969 220.78125 463.972656 220.058594 C 462.265625 219.816406 462.273438 219.777344 462.273438 218.207031 C 462.875 218.15625 463.496094 218.050781 464.113281 218.050781 C 475.519531 218.042969 486.925781 218.046875 498.332031 218.046875 C 498.730469 218.046875 499.136719 218.046875 499.535156 218.058594 C 500.585938 218.089844 500.648438 218.734375 500.445312 219.691406 C 499.382812 219.871094 498.28125 220.011719 497.207031 220.253906 C 494.472656 220.863281 493.25 222.585938 493.679688 225.332031 C 493.824219 226.269531 494.148438 227.210938 494.5625 228.0625 C 505.023438 249.652344 515.503906 271.230469 525.988281 292.804688 C 526.15625 293.15625 526.390625 293.472656 526.820312 294.175781 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 625.191406 207.792969 C 624.769531 205.898438 624.394531 204.199219 623.949219 202.183594 C 638.378906 199.144531 652.679688 196.136719 667.167969 193.085938 C 667.578125 194.964844 667.949219 196.65625 668.390625 198.675781 C 653.964844 201.820312 639.660156 204.757812 625.191406 207.792969 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 368.546875 380.882812 L 370.867188 380.882812 L 370.867188 401.082031 C 368.140625 401.585938 368.132812 401.589844 366.734375 399.421875 C 364.082031 395.308594 361.445312 391.1875 358.796875 387.070312 C 358.332031 386.34375 357.839844 385.632812 357.109375 384.945312 C 356.667969 386.734375 356.808594 388.523438 356.78125 390.296875 C 356.757812 392.0625 356.777344 393.828125 356.777344 395.59375 C 356.777344 397.421875 356.777344 399.253906 356.777344 401.21875 C 355.957031 401.285156 355.351562 401.335938 354.765625 401.386719 C 354.210938 399.570312 354.097656 383.746094 354.589844 381.011719 C 357.355469 380.53125 357.355469 380.53125 358.800781 382.792969 C 361.777344 387.457031 364.757812 392.121094 367.738281 396.785156 C 367.824219 396.917969 367.953125 397.019531 368.230469 397.316406 C 368.824219 395.417969 368.472656 393.613281 368.535156 391.851562 C 368.597656 390.089844 368.546875 388.324219 368.546875 386.558594 C 368.546875 384.726562 368.546875 382.894531 368.546875 380.882812 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 719.769531 390.304688 C 721.34375 390.304688 722.628906 390.453125 723.863281 390.273438 C 725.933594 389.964844 727.234375 388.207031 727.101562 386.203125 C 726.976562 384.320312 725.785156 383.167969 723.613281 382.992188 C 722.378906 382.890625 721.128906 382.972656 719.769531 382.972656 Z M 717.261719 380.746094 C 719.554688 380.746094 721.558594 380.707031 723.558594 380.753906 C 726.761719 380.824219 728.847656 382.253906 729.457031 384.703125 C 730.140625 387.476562 729.125 389.625 726.351562 391.300781 C 726.148438 391.421875 725.964844 391.570312 725.71875 391.746094 C 726.796875 393.320312 727.886719 394.851562 728.90625 396.433594 C 729.890625 397.960938 730.796875 399.546875 731.859375 401.300781 L 729.085938 401.300781 C 727.894531 399.324219 726.675781 397.355469 725.519531 395.347656 C 724.25 393.144531 722.507812 392.101562 719.671875 392.914062 L 719.671875 401.257812 L 717.261719 401.257812 Z M 717.261719 380.746094 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 548.527344 401.316406 L 546.28125 401.316406 L 546.28125 392.136719 L 535.6875 392.136719 C 535.203125 395.117188 535.726562 398.160156 535.367188 401.253906 L 533.109375 401.253906 L 533.109375 380.882812 L 535.53125 380.882812 L 535.53125 389.683594 L 546.109375 389.683594 L 546.109375 380.910156 C 547.0625 380.859375 547.722656 380.828125 548.527344 380.785156 Z M 548.527344 401.316406 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 319.9375 382.96875 L 319.9375 390.3125 C 321.414062 390.3125 322.707031 390.460938 323.945312 390.28125 C 326.050781 389.976562 327.261719 388.316406 327.148438 386.203125 C 327.042969 384.277344 325.914062 383.167969 323.703125 382.984375 C 322.523438 382.890625 321.328125 382.96875 319.9375 382.96875 M 325.878906 391.699219 C 327.96875 394.921875 329.914062 397.917969 331.90625 400.988281 C 329.371094 401.585938 329.367188 401.589844 328.285156 399.8125 C 327.332031 398.242188 326.386719 396.660156 325.449219 395.074219 C 324.191406 392.941406 322.40625 392.15625 319.792969 392.914062 L 319.792969 401.175781 C 318.949219 401.257812 318.296875 401.320312 317.472656 401.398438 L 317.472656 380.789062 C 320.289062 380.804688 323.128906 380.410156 325.949219 381.101562 C 328.019531 381.609375 329.242188 383.023438 329.640625 385.089844 C 330.050781 387.222656 329.441406 389.0625 327.757812 390.46875 C 327.160156 390.96875 326.445312 391.332031 325.878906 391.699219 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 583.351562 393.292969 C 582.296875 390.128906 581.253906 387.21875 579.84375 383.839844 C 579.089844 385.863281 578.503906 387.269531 578.050781 388.714844 C 577.589844 390.191406 576.625 391.542969 576.742188 393.292969 Z M 589.101562 401.296875 L 586.496094 401.296875 C 585.757812 399.460938 585.019531 397.617188 584.253906 395.714844 L 575.542969 395.714844 C 574.863281 397.476562 574.15625 399.320312 573.410156 401.257812 L 570.804688 401.257812 C 573.4375 394.386719 576.007812 387.671875 578.613281 380.875 L 581.230469 380.875 C 583.792969 387.527344 586.378906 394.238281 589.101562 401.296875 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 399.03125 393.246094 L 406.035156 393.246094 C 404.847656 390.117188 403.980469 387.164062 402.4375 383.902344 C 401.203125 387.292969 400.175781 390.109375 399.03125 393.246094 M 401.277344 380.820312 L 403.859375 380.820312 C 406.449219 387.554688 409.058594 394.335938 411.738281 401.289062 L 409.144531 401.289062 C 408.429688 399.515625 407.6875 397.675781 406.910156 395.738281 L 398.152344 395.738281 C 397.472656 397.550781 396.804688 399.335938 396.09375 401.238281 L 393.464844 401.238281 C 396.078125 394.410156 398.644531 387.707031 401.277344 380.820312 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 111.5625 380.867188 L 113.84375 380.867188 L 113.84375 389.667969 L 124.398438 389.667969 L 124.398438 380.96875 C 125.320312 380.878906 125.976562 380.808594 126.804688 380.726562 L 126.804688 401.226562 C 126.15625 401.269531 125.503906 401.308594 124.601562 401.367188 L 124.601562 392.4375 C 122.628906 391.84375 116.710938 391.761719 113.9375 392.277344 L 113.9375 401.1875 C 113.046875 401.257812 112.390625 401.3125 111.5625 401.378906 Z M 111.5625 380.867188 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 685.105469 382.898438 L 685.105469 389.753906 L 692.214844 389.753906 C 692.265625 390.542969 692.300781 391.054688 692.355469 391.886719 L 685.308594 391.886719 C 684.746094 394.375 685.046875 396.582031 685.046875 399.125 L 693.273438 399.125 C 693.34375 399.980469 693.386719 400.507812 693.445312 401.21875 L 682.664062 401.21875 L 682.664062 380.84375 L 692.941406 380.84375 L 692.941406 382.898438 Z M 685.105469 382.898438 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 614.421875 391.066406 C 616.789062 391.554688 618.398438 391.476562 619.679688 390.847656 C 621.285156 390.054688 622.175781 388.328125 621.941406 386.457031 C 621.707031 384.59375 620.632812 383.347656 618.726562 383.109375 C 617.34375 382.933594 615.921875 383.074219 614.421875 383.074219 Z M 612.03125 380.78125 C 614.402344 380.78125 616.570312 380.664062 618.71875 380.808594 C 621.933594 381.023438 624.019531 382.929688 624.382812 385.726562 C 624.832031 389.171875 623.304688 391.957031 620.242188 393.027344 C 619.203125 393.390625 618.058594 393.488281 616.949219 393.617188 C 616.171875 393.703125 615.378906 393.632812 614.285156 393.632812 C 614.285156 395.035156 614.285156 396.214844 614.285156 397.394531 C 614.285156 398.589844 614.285156 399.789062 614.285156 401.191406 C 613.503906 401.261719 612.847656 401.320312 612.03125 401.390625 Z M 612.03125 380.78125 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 292.691406 389.761719 C 292.726562 390.585938 292.746094 391.042969 292.78125 391.800781 C 290.375 391.898438 288.023438 391.988281 285.570312 392.082031 L 285.570312 399.203125 C 287.925781 399.203125 290.152344 399.171875 292.375 399.214844 C 293.878906 399.242188 293.878906 399.285156 293.761719 401.25 L 283.136719 401.25 L 283.136719 380.902344 L 293.199219 380.902344 C 293.628906 382.773438 293.59375 382.871094 291.925781 382.910156 C 289.859375 382.957031 287.792969 382.921875 285.585938 382.921875 L 285.585938 389.761719 Z M 292.691406 389.761719 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 213.835938 380.824219 L 224.082031 380.824219 C 224.113281 381.449219 224.144531 382.027344 224.191406 382.890625 L 216.265625 382.890625 L 216.265625 389.789062 L 223.351562 389.789062 L 223.351562 391.910156 L 216.222656 391.910156 C 216.171875 393.28125 216.117188 394.367188 216.101562 395.457031 C 216.082031 396.566406 216.097656 397.675781 216.097656 399.101562 L 224.453125 399.101562 C 224.523438 399.984375 224.570312 400.558594 224.628906 401.265625 L 213.835938 401.265625 Z M 213.835938 380.824219 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 162.394531 382.921875 C 160.722656 382.921875 159.449219 382.921875 158.175781 382.921875 C 156.992188 382.921875 155.804688 382.921875 154.453125 382.921875 L 154.453125 389.800781 L 161.527344 389.800781 L 161.527344 391.933594 L 154.449219 391.933594 L 154.449219 399.167969 L 162.621094 399.167969 C 162.664062 400.023438 162.691406 400.554688 162.722656 401.242188 L 151.976562 401.242188 L 151.976562 380.910156 L 162.230469 380.910156 C 162.269531 381.425781 162.316406 382 162.394531 382.921875 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 764.773438 383.3125 C 763.296875 383.066406 761.828125 382.707031 760.339844 382.625 C 759.417969 382.574219 758.398438 382.78125 757.554688 383.164062 C 755.558594 384.078125 755.203125 386.441406 756.835938 387.914062 C 757.589844 388.597656 758.578125 389.027344 759.46875 389.5625 C 760.902344 390.433594 762.421875 391.1875 763.765625 392.183594 C 765.632812 393.566406 766.175781 395.554688 765.585938 397.761719 C 765.003906 399.941406 763.351562 401.136719 761.234375 401.363281 C 759.273438 401.574219 757.238281 401.527344 755.28125 401.269531 C 753.265625 401.007812 753.148438 400.597656 753.464844 398.121094 C 754.152344 398.390625 754.78125 398.769531 755.460938 398.882812 C 757.019531 399.148438 758.609375 399.457031 760.179688 399.425781 C 761.601562 399.394531 762.820312 398.644531 763.183594 397.097656 C 763.539062 395.582031 762.871094 394.433594 761.640625 393.605469 C 760.910156 393.117188 760.121094 392.714844 759.359375 392.277344 C 758.105469 391.5625 756.769531 390.964844 755.613281 390.121094 C 752.007812 387.488281 752.578125 382.875 756.691406 381.128906 C 758.742188 380.257812 760.878906 380.125 763.054688 380.570312 C 765.082031 380.988281 765.097656 381.023438 764.773438 383.3125 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 509.085938 383.523438 C 504.855469 382.050781 500.929688 381.878906 498 385.875 C 495.953125 388.667969 495.929688 393.820312 497.992188 396.5625 C 500.957031 400.507812 504.882812 399.914062 508.992188 398.589844 C 509.488281 399.574219 509.585938 400.363281 508.445312 400.949219 C 503.589844 403.445312 496.777344 401.039062 494.796875 396.027344 C 493.433594 392.582031 493.546875 389.097656 495.261719 385.785156 C 497.890625 380.710938 503.613281 379.441406 508.304688 380.890625 C 509.71875 381.328125 509.414062 382.386719 509.085938 383.523438 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 651.628906 382.851562 L 645.902344 382.851562 C 645.847656 382.101562 645.8125 381.566406 645.761719 380.882812 L 659.882812 380.882812 L 659.882812 382.9375 L 654.1875 382.9375 L 654.1875 401.253906 L 651.628906 401.253906 Z M 651.628906 382.851562 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 74.375 382.785156 C 74.410156 381.988281 74.433594 381.464844 74.460938 380.84375 L 88.425781 380.84375 C 88.457031 381.457031 88.488281 382.035156 88.53125 382.921875 L 82.660156 382.921875 L 82.660156 401.261719 C 81.773438 401.300781 81.164062 401.328125 80.285156 401.367188 L 80.285156 383.089844 C 78.246094 382.984375 76.449219 382.894531 74.375 382.785156 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 260.011719 380.878906 L 260.011719 382.789062 C 258.15625 382.871094 256.359375 382.949219 254.292969 383.042969 L 254.292969 401.210938 L 251.789062 401.210938 L 251.789062 382.9375 L 246.050781 382.9375 C 246.011719 382.09375 245.984375 381.558594 245.953125 380.878906 Z M 260.011719 380.878906 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 436.8125 399.171875 L 445.007812 399.171875 C 445.078125 399.980469 445.125 400.558594 445.1875 401.273438 L 434.636719 401.273438 C 434.367188 394.546875 434.578125 387.796875 434.496094 380.882812 C 435.316406 380.835938 435.921875 380.796875 436.8125 380.746094 Z M 436.8125 399.171875 "/></g></symbol>
+</defs>
+</svg>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a class="navbrand" href="#top" aria-label="ADHYAY, The Eternal Chapters"><svg class="logo" viewBox="0 0 820 210" role="img"><use href="#adhyay-logo"/></svg><span>The Eternal Chapters</span></a>
+    <ul class="nav-links">
+      <li><a href="#book">The chapters</a></li>
+      <li><a href="#journeys">Journeys</a></li>
+      <li><a href="#promise">Experiences</a></li>
+      <li><a href="#tiers">Hospitality</a></li>
+      <li><a href="#departures">Departures</a></li>
+      <li><a href="#notes">Before you travel</a></li>
+    </ul>
+    <button class="btn btn-sm" data-open>Enquire <svg><use href="#i-arrow"/></svg></button>
+  </div>
+</nav>
+
+<div class="thread" id="thread" aria-label="Page progress"><div class="fill" id="threadFill"></div><div class="bead" id="threadBead"></div></div>
+
+<main>
+<section class="hero" id="top">
+  <div class="hero-bg"><img id="heroImg" src="assets/img/hero-banner.webp" alt="" aria-hidden="true" style="object-position:24% 58%"></div>
+  <canvas id="embers" aria-hidden="true"></canvas>
+  <div class="hero-frame" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="wrap" id="heroIn">
+    <svg class="logo hero-mark" viewBox="0 0 820 210" role="img" aria-label="ADHYAY, The Eternal Chapters"><use href="#adhyay-logo"/></svg>
+    <span class="hero-tag">Ramayan Adhyay</span>
+    <h1>The Ramayan was never meant<br>to be only read.<em>It was meant to be experienced.</em></h1>
+    <div class="orn" aria-hidden="true"><i></i></div>
+    <p class="hero-sub">Three timeless chapters, each experienced in the place where it unfolded. Panchavati, Kishkindha and The Last Chapter, hosted with care in a small group.</p>
+    <div class="hero-cta">
+      <button class="btn" data-open>Receive the journey details <svg><use href="#i-arrow"/></svg></button>
+      <a class="btn btn-ghost" href="#book">Read the chapters</a>
+    </div>
+    <ul class="proof">
+      <li>Limited seat group journeys</li>
+      <li>One chapter, or all three</li>
+      <li>Departures from December 2026</li>
+    </ul>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<section class="citystrip">
+  <div class="wrap">
+    <div class="cities-art three">
+      <a class="ca rv" href="#book" data-chapter="0"><img src="assets/img/ch-panchavati.webp" alt="A carved stone temple in Panchavati, Nashik"><figcaption><b>Panchavati</b>In the forest of exile</figcaption></a>
+      <a class="ca rv d1" href="#book" data-chapter="1"><img src="assets/img/ch-kishkindha.webp" alt="The stone chariot of Hampi at sunset"><figcaption><b>Kishkindha</b>Where stone remembers</figcaption></a>
+      <a class="ca rv d2" href="#book" data-chapter="2"><img src="assets/img/card-lastchapter.webp" alt="Ancient ruins on the shore at Dhanushkodi, facing the sea towards Lanka"><figcaption><b>The Last Chapter</b>The crossing, the search, the return</figcaption></a>
+    </div>
+  </div>
+</section>
+
+<section class="clarity" id="what" data-thread="What this is">
+  <div class="wrap">
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow rv">First, what this is</span>
+        <h2 class="h2 split">You make the memories.<br><em>We take care of everything else.</em></h2>
+        <p class="lede rv d2">Leave behind the crowds, the queues and the endless planning. Every ADHYAY journey is thoughtfully curated, so you can be fully present for what truly matters.</p>
+      </div>
+      <figure class="cl-art reveal-img"><img src="assets/img/bk-panchavati.webp" alt="Evening at Ramkund on the Godavari, with a brass diya and saffron cloth on the ghat steps" loading="lazy"><figcaption>Panchavati · evening at Ramkund</figcaption></figure>
+    </div>
+    <div class="cl-list rv d1">
+      <div class="cl-row"><span class="cl-mark">&#10003;</span><div><b>One chapter, two, or all three</b><p>Panchavati, Kishkindha and The Last Chapter are each complete on their own. Choose one, or join them into a single journey. The Last Chapter can be taken whole, or in any of its three parts.</p></div></div>
+      <div class="cl-row"><span class="cl-mark">&#10003;</span><div><b>A Journey Host beside you</b><p>From your arrival to your farewell, your Journey Host looks after the darshans, the luxury accommodation, private transfers, every meal and every reservation. You simply arrive.</p></div></div>
+      <div class="cl-row"><span class="cl-mark">&#10003;</span><div><b>The story before the place</b><p>At each sacred site, a scholar, storyteller or kathavachak receives you and shares what happened there, before you step inside and see it for yourself.</p></div></div>
+      <div class="cl-row"><span class="cl-mark">&#10003;</span><div><b>Fixed departures, or your own dates</b><p>Travel with a small group on one of our departures, or tell us your dates and we will curate the journey around your family.</p></div></div>
+      <div class="cl-row"><span class="cl-mark">&#10003;</span><div><b>Clear pricing, from the start</b><p>Every price you see is per person, for two travelling together, plus GST. Flights are booked separately, and we are happy to arrange them once your journey is confirmed.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto" aria-label="The ADHYAY philosophy">
+  <svg class="mandala" aria-hidden="true"><use href="#mandala"/></svg>
+  <div class="wrap">
+    <p id="manifesto">Most travel companies ask, where do you want to go? <span class="g">At ADHYAY, we ask, what do you want to feel?</span></p>
+    <cite>The ADHYAY way</cite>
+  </div>
+</section>
+
+<section class="bookzone" id="book" data-thread="The chapters">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow rv">One story, chapter by chapter</span>
+      <h2 class="h2 split">Turn the page. <em>Enter each chapter.</em></h2>
+      <p class="lede rv d2">The Ramayan is one continuous story. Begin with a single chapter, or follow it from the forest of exile all the way home to Ayodhya.</p>
+    </div>
+    <div class="booktabs rv" id="bkTabs" role="tablist" aria-label="Chapters"></div>
+    <div class="book rv d1" id="bookEl">
+      <div class="bk-inner" id="bkInner">
+        <div class="bk-page bk-left" id="bkL" aria-live="polite"></div>
+        <div class="bk-page bk-right" id="bkR"></div>
+        <div class="bk-spine" aria-hidden="true"></div>
+      </div>
+      <button class="bk-nav prev" id="bkPrev" aria-label="Previous chapter">&#8249;</button>
+      <button class="bk-nav next" id="bkNext" aria-label="Next chapter">&#8250;</button>
+    </div>
+    <div class="bk-foot"><span class="bk-count" id="bkCount"></span><div class="bk-dots" id="bkDots" aria-hidden="true"></div></div>
+    <p class="bk-hint">Turn with the arrows, the chapter names, your keyboard, or a swipe.</p>
+  </div>
+</section>
+
+<section class="journeys" id="journeys" data-thread="Journeys">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow rv">The journeys</span>
+      <h2 class="h2 split">Choose a chapter. <em>Travel it your way.</em></h2>
+      <p class="lede rv d2">Each chapter is complete on its own. Choose one, then the length that suits you, and see how the days unfold.</p>
+    </div>
+
+    <div class="stage rv">
+      <div class="stage-art" id="stArt">
+        <div class="stage-num"><b id="stNum">2</b><span id="stNumL">Nights</span></div>
+      </div>
+      <div class="stage-body">
+        <p class="st-k">The chapter</p>
+        <div class="chpick" id="stCh" role="group" aria-label="Chapter">
+          <button type="button" data-ch="panchavati"><small>I</small>Panchavati</button>
+          <button type="button" data-ch="kishkindha"><small>II</small>Kishkindha</button>
+          <button type="button" data-ch="last"><small>III</small>The Last Chapter</button>
+        </div>
+        <div class="st-row">
+          <div>
+            <p class="st-k">The length</p>
+            <div class="seg" id="stLen" role="group" aria-label="Length"></div>
+          </div>
+        </div>
+        <div class="st-parts" id="stParts" hidden>
+          <p class="st-k">The parts <span>Take any one, any two, or all three</span></p>
+          <div class="route parts" id="stRoute">
+            <div class="rfill" id="stFill"></div>
+            <button type="button" class="node" data-part="0" aria-pressed="true"><i></i>The Crossing<small>Rameswaram</small></button>
+            <button type="button" class="node" data-part="1" aria-pressed="true"><i></i>The Search<small>Sri Lanka</small></button>
+            <button type="button" class="node" data-part="2" aria-pressed="true"><i></i>The Return<small>Ayodhya</small></button>
+          </div>
+        </div>
+        <div class="jd" id="stJd" aria-live="polite">
+          <h3 id="stName"></h3>
+          <p class="jd-meta" id="stMeta"></p>
+          <ol class="jd-days" id="stDays"></ol>
+          <div class="jd-foot">
+            <div class="jd-price"><small>Platinum, from</small><b id="stPrice"></b><span>per person, two travelling together, plus GST</span></div>
+            <button class="btn" id="stBtn" data-open>Receive these details <svg><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="elevate rv">
+      <div class="seal" aria-hidden="true"><svg><use href="#i-lotus"/></svg></div>
+      <div>
+        <h4>Elevate any journey</h4>
+        <p>Elite and Elite+ bring suites to return to each evening and a dedicated assistant by your side. At Elite+, a personal guide and concierge stay with you from your first darshan to your farewell.</p>
+        <a class="tlink" href="#tiers">Compare the three tiers <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div>
+        <h4>Or join the chapters</h4>
+        <p>Pair Panchavati with Kishkindha, or close any chapter with the homecoming in Ayodhya. Tell us what calls to you, and we will plan it as one journey.</p>
+        <button class="tlink" type="button" data-open data-journey="multi">Plan more than one chapter <svg><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="promise" id="promise" data-thread="Experiences">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow rv">The ADHYAY experience</span>
+        <h2 class="h2 split">Moments that stay, <em>long after you return.</em></h2>
+        <p class="lede rv d2">Some journeys leave you with photographs. Others leave you with stories that continue long after you are home.</p>
+      </div>
+      <div class="arrows rv"><button class="l" id="pPrev" aria-label="Previous"><svg><use href="#i-arrow"/></svg></button><button id="pNext" aria-label="Next"><svg><use href="#i-arrow"/></svg></button></div>
+    </div>
+  </div>
+  <div class="ptrack" id="ptrack"></div>
+  <div class="wrap"><div class="pbar"><i id="pbar"></i></div></div>
+</section>
+
+<section class="tiers hs" id="tiers" data-thread="Hospitality">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow rv">Hospitality</span>
+      <h2 class="h2 split">Choose the comfort <em>that feels right for you.</em></h2>
+      <p class="lede rv d2">Every tier follows the same chapters, with the same darshans and stories. You choose your stay, and the level of personal care.</p>
+    </div>
+    <div class="hs-bar rv"><div class="jchips" id="hsChips" role="group" aria-label="Show prices for"></div></div>
+    <div class="hs-cards rv d1" id="hsCards" aria-live="polite"></div>
+    <p class="hs-fine rv" id="hsFine"></p>
+  </div>
+</section>
+
+<section class="dep" id="departures" data-thread="Departures">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow rv">Departures · 2026–27</span>
+      <h2 class="h2 split">Fixed departures, <em>or dates of your own.</em></h2>
+      <p class="lede rv d2">Choose a chapter, then a departure, to see your dates. Seats are limited on every departure.</p>
+    </div>
+    <div class="planner rv">
+      <div class="pl-steps">
+        <p class="pl-k"><span>1</span>Choose a chapter</p>
+        <div class="jchips" id="plChips"></div>
+        <div class="pl-sep"></div>
+        <p class="pl-k"><span>2</span>Choose a departure</p>
+        <div class="months" id="plMonths"></div>
+      </div>
+      <div class="pl-result">
+        <img id="plImg" src="assets/img/st-panchavati.webp" alt="" aria-hidden="true">
+        <div class="pl-out" id="plOut" aria-live="polite">
+          <p class="pl-k" style="margin-bottom:0">Your journey</p>
+          <p class="pl-dates" id="plDates"></p>
+          <p class="pl-note" id="plNote"></p>
+          <h3 id="plName"></h3>
+          <p class="pl-route" id="plRoute"></p>
+          <div class="pl-price">Platinum, from<b id="plPrice"></b>per person, two travelling together, plus GST</div>
+        </div>
+        <div class="pl-cta"><button class="btn" id="plBtn">Enquire for these dates <svg><use href="#i-arrow"/></svg></button></div>
+      </div>
+    </div>
+    <p class="fine center" style="text-align:center">Would you rather travel on dates of your own? Any chapter can be arranged around your family's calendar. <button type="button" class="inl" data-open data-departure="own">Tell us when</button></p>
+  </div>
+</section>
+
+<section class="notes" id="notes" data-thread="Before you travel">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:0">
+      <span class="eyebrow rv">Before you travel</span>
+      <h2 class="h2 split">A few things, <em>gently noted.</em></h2>
+      <p class="lede rv d2">The details our guests most often ask about, answered with care.</p>
+    </div>
+    <div class="acc rv d1">
+      <details open><summary>How is pricing shown?<i></i></summary><p class="ans">Every price is per person, for two guests travelling together, and is shown before GST. For a solo journey, we will gladly share a rate of its own. The Last Chapter rates apply to the January and February departures.</p></details>
+      <details><summary>Are flights included?<i></i></summary><p class="ans">Flights are not part of the journey rate. You are welcome to book your own, or once your journey is confirmed and the advance is paid, our travel desk will arrange them for you.</p></details>
+      <details><summary>What will be served at the table?<i></i></summary><p class="ans">Every meal is included and is pure vegetarian, with regional specialities of Maharashtra and Karnataka along the way. Sattvik, Jain and fasting menus are prepared with prior notice. In keeping with the spirit of these journeys, alcohol and non-vegetarian food are not served.</p></details>
+      <details><summary>How are darshans arranged?<i></i></summary><p class="ans">Your Journey Host plans and assists every darshan, so you are free to simply be present. On festival days, temple timings can change the order of a day, and when they do, it is quietly rearranged around you.</p></details>
+      <details><summary>Are the hill climbs demanding?<i></i></summary><p class="ans">The climb to Anjanadri in Kishkindha is optional. In the 3-night Panchavati journey, the trek to Anjaneri takes about two hours each way, so we suggest it for those comfortable with an uphill walk.</p></details>
+      <details><summary>Can elders travel comfortably?<i></i></summary><p class="ans">Yes. Wheelchair assistance, medical support and gentler pacing can all be arranged. Simply let us know in advance, and any additional cost is shared with you before confirmation.</p></details>
+      <details><summary>What about the sacred waters?<i></i></summary><p class="ans">The holy snan at Ramkund or Kushavarta is optional, with a priest-led sankalp and changing arrangements in place. The coracle on the Tungabhadra follows the river's water levels and conditions on the day.</p></details>
+      <details><summary>Where will we stay?<i></i></summary><p class="ans">At carefully selected luxury hotels, with suites on Elite and signature suites on Elite+. Should a change be needed at the time of booking, an equivalent luxury stay is offered.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="enquire">
+  <svg class="mandala" aria-hidden="true"><use href="#mandala"/></svg>
+  <div class="wrap">
+    <span class="eyebrow rv">Begin your chapter</span>
+    <h2 class="h2 split">Tell us how you would <em>like to travel.</em></h2>
+    <p class="lede rv d2">Share a few details and choose a time to speak with us. Your journey details, with the day-by-day plan and all three tiers, will then be shared with you on WhatsApp and email.</p>
+    <button class="btn rv d3" data-open>Receive the journey details <svg><use href="#i-arrow"/></svg></button>
+    <div class="contact rv d3">
+      <a href="tel:+919625845915"><svg><use href="#i-phone"/></svg>+91 96258 45915</a>
+      <a href="tel:+919318391813"><svg><use href="#i-phone"/></svg>+91 93183 91813</a>
+      <a href="mailto:journeys@lakshurious.com"><svg><use href="#i-mail"/></svg>journeys@lakshurious.com</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg class="logo" viewBox="0 0 820 210" role="img" aria-label="ADHYAY, The Eternal Chapters"><use href="#adhyay-logo"/></svg>
+    <span>&copy; 2026 ADHYAY &middot; The Eternal Chapters &middot; A limited seat luxury group journey</span>
+  </div>
+</footer>
+
+<div class="mcta" id="mcta"><button class="btn" data-open>Receive the journey details <svg><use href="#i-arrow"/></svg></button></div>
+
+<!-- ENQUIRY MODAL -->
+<div class="modal" id="lead" role="dialog" aria-modal="true" aria-labelledby="lead-title" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19" stroke="currentColor" stroke-width="1.6" fill="none"/></svg></button>
+    <div class="modal-art" aria-hidden="true">
+      <img data-art="bow" class="on" src="assets/img/art-bow.webp" alt="">
+      <img data-art="panch" src="assets/img/ch-panchavati.webp" alt="">
+      <img data-art="kish" src="assets/img/ch-kishkindha.webp" alt="">
+      <img data-art="last" src="assets/img/card-lastchapter.webp" alt="">
+      <img data-art="search" src="assets/img/st-search.webp" alt="">
+      <img data-art="return" src="assets/img/st-return.webp" alt="">
+      <p class="art-q">Some places are visited. Some places are experienced.</p>
+      <svg class="logo" viewBox="0 0 820 210"><use href="#adhyay-logo"/></svg>
+    </div>
+    <div class="modal-body">
+      <form id="leadform" novalidate>
+        <div>
+          <h2 id="lead-title">Receive the journey details</h2>
+          <p class="lead">Share a few details, then choose a time to speak with us. Your journey details will reach you on WhatsApp and email.</p>
+          <p class="whatis"><b>What you are enquiring about:</b> a hosted, limited seat group journey through the chapters of the Ramayan. You travel in person, and we take care of the darshans, the luxury accommodation, the meals, the transfers and the storytelling sessions along the way.</p>
+        </div>
+        <div class="field">
+          <label for="f-journey">Which journey interests you</label>
+          <select id="f-journey" name="journey" required></select>
+          <p class="hint" id="j-hint"></p>
+          <p class="err" id="e-journey" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="f-range">Your preferred journey range</label>
+          <select id="f-range" name="journey_range" required>
+            <option value="">Select a range</option>
+            <option value="upto-2L">Up to ₹2 lakh</option>
+            <option value="2-4L">₹2 lakh to ₹4 lakh</option>
+            <option value="4-6L">₹4 lakh to ₹6 lakh</option>
+            <option value="6L+">₹6 lakh and above</option>
+            <option value="advise">I would value your recommendation</option>
+          </select>
+          <p class="hint">Per person, plus GST. It helps us suggest the stay and tier that suit you best.</p>
+          <p class="err" id="e-range" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="f-date">When would you like to travel</label>
+          <select id="f-date" name="departure" required></select>
+          <p class="err" id="e-date" role="alert"></p>
+        </div>
+        <div class="field" id="own-wrap" hidden>
+          <label for="f-own">Your preferred dates or month <span class="optional">(optional)</span></label>
+          <input id="f-own" name="own_dates" autocomplete="off" placeholder="For example, the second week of March">
+        </div>
+        <div class="field">
+          <label for="f-trav">How many travelling</label>
+          <select id="f-trav" name="travellers" required>
+            <option value="">Select</option>
+            <option value="2">2 &middot; a couple</option>
+            <option value="3-4">3 to 4</option>
+            <option value="5-8">5 to 8</option>
+            <option value="9+">9 or more &middot; a family or private group</option>
+            <option value="solo">Travelling solo</option>
+            <option value="undecided">Not decided yet</option>
+          </select>
+          <p class="err" id="e-trav" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="f-connect">How would you like to speak with us</label>
+          <select id="f-connect" name="connect"></select>
+          <p class="hint" id="c-hint"></p>
+        </div>
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required><p class="err" id="e-name" role="alert"></p></div>
+        <div class="field"><label for="f-phone">WhatsApp number</label>
+          <div class="phone">
+            <select id="f-cc" name="cc" aria-label="Country code">
+              <option value="+91" selected>+91</option><option value="+1">+1</option><option value="+44">+44</option><option value="+971">+971</option><option value="+65">+65</option><option value="+61">+61</option><option value="+64">+64</option><option value="+974">+974</option><option value="+966">+966</option><option value="+968">+968</option><option value="+973">+973</option><option value="+965">+965</option><option value="+852">+852</option><option value="+60">+60</option><option value="+66">+66</option><option value="+81">+81</option><option value="+49">+49</option><option value="+33">+33</option><option value="+41">+41</option><option value="+31">+31</option><option value="+27">+27</option><option value="+254">+254</option><option value="+977">+977</option><option value="+94">+94</option><option value="+880">+880</option>
+            </select>
+            <input id="f-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" required>
+          </div>
+          <p class="err" id="e-phone" role="alert"></p>
+        </div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="err" id="e-email" role="alert"></p></div>
+        <button class="btn" type="submit" id="f-submit"><span id="f-submit-t">Send my enquiry</span> <svg><use href="#i-arrow"/></svg></button>
+        <p class="err" id="e-submit" role="alert"></p>
+        <p class="privacy">Your details stay with ADHYAY. We do not share them with anyone.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+/* =========================================================================
+   CONFIG: fill these in before going live
+   ========================================================================= */
+var CONFIG = {
+  /* Webhook that starts the WhatsApp + email automation (optional, runs alongside Getnos Desk).
+     Receives a JSON POST: see buildPayload() for every field, including intent_tier. */
+  webhookUrl: "",
+
+  /* Getnos Desk, the lead backend. Each flat field becomes a column. */
+  desk: {
+    url: "https://deskbackend.getnos.io/v1/lead",
+    apiKey: "lh_KhZfHcxxxfA57Q96fgxoVSdr7F4qsbB780r9BnuHklE",
+    form: "contact",
+    subject: "New Lead Ramayan Adhyay Journeys"
+  },
+
+  /* THE BOOKING STEP
+     tidycalUrl: the TidyCal booking page, for example "https://tidycal.com/adhyay/30-minute-call".
+     Every enquiry comes here after "Send my enquiry". The lead is saved to the CRM first.
+     In TidyCal, open this booking type > Notifications > "Redirect to custom page after booking",
+     and paste:  https://YOUR-DOMAIN/thank-you.html?via=booked&name={{contact.name}}
+     Leave tidycalUrl empty and every guest goes straight to the thank-you page instead. */
+  tidycalUrl: "",
+  thankYouUrl: "thank-you.html",
+
+  /* Every journey the form offers. "p" is the Platinum price, per person for two
+     travelling together, before GST. "files" are the journey decks the automation sends. */
+  journeys: {
+    panch2: { grp: "panch", fam: "pk", label: "Panchavati · 2 Nights / 3 Days", name: "The Panchavati Chapter", nights: "2 Nights · 3 Days", n: 2,
+      route: "Nashik · Panchavati · Trimbakeshwar", art: "panch", p: 99000,
+      files: ["assets/itineraries/adhyay-panchavati-chapter-2n3d.pdf"] },
+    panch3: { grp: "panch", fam: "pk", label: "Panchavati · 3 Nights / 4 Days", name: "The Panchavati Chapter", nights: "3 Nights · 4 Days", n: 3,
+      route: "Nashik · Panchavati · Trimbakeshwar · Anjaneri", art: "panch", p: 135000,
+      files: ["assets/itineraries/adhyay-panchavati-chapter-3n4d.pdf"] },
+    kish3: { grp: "kish", fam: "pk", label: "Kishkindha · 3 Nights / 4 Days", name: "The Kishkindha Chapter", nights: "3 Nights · 4 Days", n: 3,
+      route: "Hampi · Kishkindha · Anegundi", art: "kish", p: 165000,
+      files: ["assets/itineraries/adhyay-kishkindha-chapter-3n4d.pdf"] },
+    kish4: { grp: "kish", fam: "pk", label: "Kishkindha · 4 Nights / 5 Days", name: "The Kishkindha Chapter", nights: "4 Nights · 5 Days", n: 4,
+      route: "Hampi · Kishkindha · Anegundi · Vijayanagara", art: "kish", p: 199000,
+      files: ["assets/itineraries/adhyay-kishkindha-chapter-4n5d.pdf"] },
+
+    last10: { grp: "last", fam: "last", label: "All three parts · 10 Nights / 11 Days", name: "The Last Chapter, complete", nights: "10 Nights · 11 Days", n: 10,
+      route: "Rameswaram · Sri Lanka · Ayodhya", art: "last", p: 535000, parts: [0, 1, 2], len: 0,
+      files: ["assets/itineraries/adhyay-last-chapter-10n11d.pdf"] },
+    last11: { grp: "last", fam: "last", label: "All three parts · 11 Nights / 12 Days", name: "The Last Chapter, complete", nights: "11 Nights · 12 Days", n: 11,
+      route: "Rameswaram · Sri Lanka · Ayodhya", art: "last", p: 582500, parts: [0, 1, 2], len: 1,
+      files: ["assets/itineraries/adhyay-last-chapter-11n12d.pdf"] },
+    lastRS: { grp: "last", fam: "last", label: "The Crossing and The Search · Rameswaram & Sri Lanka", name: "The Crossing and The Search", nights: "8 or 9 Nights", n: 8,
+      route: "Rameswaram · Dhanushkodi · Sri Lanka", art: "search", p: 431000, parts: [0, 1], len: 0, note: "A seven-night Sri Lanka option is also available.",
+      files: ["assets/itineraries/adhyay-last-chapter-10n11d.pdf"] },
+    lastSA: { grp: "last", fam: "last", label: "The Search and The Return · Sri Lanka & Ayodhya", name: "The Search and The Return", nights: "8 or 9 Nights", n: 8,
+      route: "Sri Lanka · Ayodhya", art: "return", p: 443000, parts: [1, 2], len: 0, note: "A seven-night Sri Lanka option is also available.",
+      files: ["assets/itineraries/adhyay-last-chapter-10n11d.pdf"] },
+    lastRA: { grp: "last", fam: "last", label: "The Crossing and The Return · Rameswaram & Ayodhya", name: "The Crossing and The Return", nights: "4 Nights", n: 4,
+      route: "Rameswaram · Dhanushkodi · Ayodhya", art: "return", p: 196000, parts: [0, 2], len: 0,
+      files: ["assets/itineraries/adhyay-last-chapter-10n11d.pdf"] },
+    lastR: { grp: "last", fam: "last", label: "The Crossing only · Rameswaram & Dhanushkodi · 2 Nights", name: "The Crossing", nights: "2 Nights · 3 Days", n: 2,
+      route: "Rameswaram · Dhanushkodi", art: "last", p: 92000, parts: [0], len: 0,
+      files: ["assets/itineraries/adhyay-last-chapter-10n11d.pdf"] },
+    lastS: { grp: "last", fam: "last", label: "The Search only · Sri Lanka · 6 or 7 Nights", name: "The Search", nights: "6 or 7 Nights", n: 6,
+      route: "Sri Lanka", art: "search", p: 339000, parts: [1], len: 0, note: "A seven-night Sri Lanka option is also available.",
+      files: ["assets/itineraries/adhyay-last-chapter-10n11d.pdf"] },
+    lastA: { grp: "last", fam: "last", label: "The Return only · Ayodhya · 2 Nights", name: "The Return", nights: "2 Nights · 3 Days", n: 2,
+      route: "Ayodhya", art: "return", p: 104000, parts: [2], len: 0,
+      files: ["assets/itineraries/adhyay-last-chapter-10n11d.pdf"] },
+
+    multi: { grp: "multi", fam: "all", label: "Two or more chapters, planned as one journey", name: "More than one chapter", nights: "Planned around you", n: 0,
+      route: "Panchavati · Kishkindha · The Last Chapter", art: "bow", priceOnRequest: true, files: [] }
+  }
+};
+
+var GROUPS = [["panch", "The Panchavati Chapter"], ["kish", "The Kishkindha Chapter"], ["last", "The Last Chapter"], ["multi", "More than one chapter"]];
+
+/* Prices for every tier, per person for two travelling together, before GST. */
+var PRICES = {
+  panch2: [99000, 133000, 185000], panch3: [135000, 175000, 245000],
+  kish3: [165000, 247000, 305000], kish4: [199000, 305000, 376000],
+  /* The Last Chapter, by part: [The Crossing, The Search, The Return], for the 11-day and 12-day journeys */
+  last: [ [[92000, 339000, 104000], [112000, 445000, 159000], [126000, 501000, 187000]],
+          [[92500, 386000, 104000], [112000, 509000, 159000], [126000, 568000, 187000]] ]
+};
+
+/* Departures. Panchavati and Kishkindha share these dates. [value, start, end, note] */
+var PK_DEPS = [
+  ["2026-12-24", "2026-12-24", "2026-12-28", ""],
+  ["2026-12-30", "2026-12-30", "2027-01-03", "Over the New Year"],
+  ["2026-12-31", "2026-12-31", "2027-01-04", "Over the New Year"],
+  ["2027-01-13", "2027-01-13", "2027-01-17", "Makar Sankranti and Lohri on 14 January"],
+  ["2027-01-22", "2027-01-22", "2027-01-26", "Netaji Subhas Chandra Bose Jayanti on 23 January"],
+  ["2027-02-11", "2027-02-11", "2027-02-15", "Basant Panchami on 11 February"],
+  ["2027-03-06", "2027-03-06", "2027-03-10", "Maha Shivratri on 6 March, Eid ul Fitr on 10 March"],
+  ["2027-03-25", "2027-03-25", "2027-03-29", "Good Friday on 26 March"]
+];
+/* The Last Chapter. For each departure: [11-day, 12-day], each [Crossing, Search, Return] as [start, end]. */
+var LAST_DEPS = [
+  { v: "last-I",   d: [ [["2026-12-31","2027-01-02"],["2027-01-02","2027-01-08"],["2027-01-08","2027-01-10"]], [["2026-12-31","2027-01-02"],["2027-01-02","2027-01-09"],["2027-01-09","2027-01-11"]] ] },
+  { v: "last-II",  d: [ [["2027-01-07","2027-01-09"],["2027-01-09","2027-01-15"],["2027-01-15","2027-01-17"]], [["2027-01-07","2027-01-09"],["2027-01-09","2027-01-16"],["2027-01-16","2027-01-18"]] ] },
+  { v: "last-III", d: [ [["2027-01-28","2027-01-30"],["2027-01-30","2027-02-05"],["2027-02-05","2027-02-07"]], [["2027-01-28","2027-01-30"],["2027-01-30","2027-02-06"],["2027-02-06","2027-02-08"]] ] },
+  { v: "last-IV",  d: [ [["2027-02-09","2027-02-11"],["2027-02-11","2027-02-17"],["2027-02-17","2027-02-19"]], [["2027-02-09","2027-02-11"],["2027-02-11","2027-02-18"],["2027-02-18","2027-02-20"]] ] }
+];
+
+/* The journeys stage: the chapters, their lengths, and how the days unfold (from the latest journey decks). */
+var STAGE = {
+  panchavati: { img: "assets/img/st-panchavati.webp", place: "Nights in Nashik", lens: [
+    { k: "panch2", label: "2 nights", days: [
+      ["The World of Panchavati", "Darshan at the Kalaram Temple, Sita Gufa and Kapaleshwar Mahadev, a scholar-led evening on Lord Rama's life beside the Godavari, the Godavari Aarti at Ramkund, and Ram bhajans and naam sankirtan."],
+      ["Trimbakeshwar, the Presence of Shiva", "Siddh Hanuman Ji, darshan at Trimbakeshwar Jyotirlinga, an optional Kushavarta snan, the legend of the Godavari, and an evening on Sita Mata's strength, grace and resolve."],
+      ["The Sacred Heart of Panchavati", "The Panchavati precinct, Ramkund with an optional holy dip, and stories of the exile at Tapovan."] ] },
+    { k: "panch3", label: "3 nights", days: [
+      ["The Forest of Exile", "Kalaram Temple darshan, Sita Gufa, a private discourse on the meaning of vanvaas, and an intimate evening of Ram bhajans."],
+      ["Where the River Remembers", "The Panchavati precinct, Ramkund with an optional snan, storytelling at Tapovan, the Godavari Aarti, and an evening of Ramayan reading."],
+      ["The Presence of Shiva", "Siddh Hanuman Ji, Trimbakeshwar Jyotirlinga, an optional Kushavarta snan, and a discourse, From Lord Rama to Hanuman Ji."],
+      ["The Beginning of Devotion", "Anjani Mata Mandir, the site believed to be the birthplace of Hanuman Ji, and a hilltop trek to Anjaneri."] ] } ] },
+  kishkindha: { img: "assets/img/st-kishkindha.webp", place: "Nights in Hampi", lens: [
+    { k: "kish3", label: "3 nights", days: [
+      ["The Land Where Stories Begin", "A warm ADHYAY welcome, darshan at Virupaksha Temple, Hampi Bazaar and the monolithic Nandi, sunset at Hemakuta Hill, and an evening with a historian on Vijayanagara."],
+      ["The Sacred Landscape of Hampi", "The monolithic Ganeshas, Lakshmi Narasimha, Kodandarama Temple with a Ramayan scholar, Yantrodharaka Hanuman, a coracle on the Tungabhadra, and Bhajan Sandhya."],
+      ["Kishkindha, the Land of Hanuman", "Sunrise at Anjanadri Hill, Pampa Sarovar, the site associated with Shabari, Anegundi, Hazara Rama and Malyavanta Raghunatha."],
+      ["The Journey Continues Within", "A gentle morning with one experience of your choosing, spiritual, cultural, wellness or nature, before your farewell."] ] },
+    { k: "kish4", label: "4 nights", days: [
+      ["The Land Where Stories Begin", "A warm ADHYAY welcome, darshan at Virupaksha Temple, Hampi Bazaar and the monolithic Nandi, sunset at Hemakuta Hill, and an evening with a historian."],
+      ["The Sacred Landscape of Hampi", "The monolithic Ganeshas, Lakshmi Narasimha, Kodandarama Temple with a Ramayan scholar, Yantrodharaka Hanuman, a coracle on the Tungabhadra, and Bhajan Sandhya."],
+      ["Kishkindha, the Land of Hanuman", "Sunrise at Anjanadri Hill, Pampa Sarovar, the site associated with Shabari, Anegundi, Hazara Rama and Malyavanta Raghunatha."],
+      ["The Glory of Vijayanagara", "The Vittala Temple with its stone chariot and musical pillars, the Royal Enclosure, the Queen's Bath, and a royal Karnataka feast."],
+      ["The Journey Continues Within", "A gentle morning with one experience of your choosing, before your farewell."] ] } ] },
+  last: { place: "Nights", lens: [ { label: "11 days" }, { label: "12 days" } ],
+    imgs: ["assets/img/card-lastchapter.webp", "assets/img/st-search.webp", "assets/img/st-return.webp"],
+    parts: [
+      { name: "The Crossing", place: "Rameswaram & Dhanushkodi", nights: [2, 2],
+        text: "Purification at Agni Theertham, darshan at the Ramanathaswamy Temple and a Vedic havan, then Dhanushkodi at dawn, where India narrows towards the sea and Ram Setu begins." },
+      { name: "The Search", place: "Sri Lanka", nights: [6, 7],
+        text: "Munneswaram and Manavari, Sigiriya, the Sri Bhakta Hanuman Temple at Ramboda, Seetha Amman Temple and Ashok Vatika, Divurumpola, Ravana Falls at Ella, Rumassala and Galle, and Kelaniya, where Vibhishana chose." },
+      { name: "The Return", place: "Ayodhya", nights: [2, 2],
+        text: "Hanuman Garhi, Tulsi Smarak Bhawan and darshan at Shri Ram Janmabhoomi, the Saryu Aarti at dusk, then Kanak Bhawan and Dashrath Mahal as the journey comes full circle." } ] }
+};
+
+/* The five spreads in the book. */
+var SPREADS = [
+  { tab: "Panchavati",
+    left: '<p class="bk-eyebrow">Chapter I · Nashik</p><h3>The Panchavati Chapter</h3><p class="bk-quote">Some stories begin when the familiar world is left behind.</p><div class="bk-orn"></div>' +
+      '<p class="bd">Panchavati, the sacred forest on the banks of the Godavari, is where Lord Rama, Sita Mata and Lakshmana spent a significant part of their exile. Away from the comforts of a kingdom, their forest life became a story of companionship, duty and quiet resolve.</p>' +
+      '<p class="bd">You seek blessings at the Kalaram Temple, stand in the stillness of Sita Gufa, and sit by the Godavari as the evening aarti is offered at Ramkund. At Trimbakeshwar, one of the twelve Jyotirlingas, the story of the river meets the timeless presence of Mahadev.</p>' +
+      '<p class="bd">Sometimes, leaving everything behind reveals what truly matters.</p>',
+    right: '<figure class="bk-fig"><img src="assets/img/bk-panchavati.webp" alt="Evening at Ramkund on the Godavari"></figure><p class="bk-label">What you will experience</p>' +
+      '<ul class="bk-list"><li>Kalaram Temple</li><li>Sita Gufa</li><li>Kapaleshwar Mahadev</li><li>Godavari Aarti at Ramkund</li><li>Trimbakeshwar Jyotirlinga</li><li>Siddh Hanuman Ji</li><li>Tapovan</li><li>Anjaneri</li></ul>' +
+      '<p class="bk-in"><b>2 or 3 nights.</b> The 3-night journey adds a morning at Anjaneri, believed to be the birthplace of Hanuman Ji.</p>' },
+  { tab: "Kishkindha",
+    left: '<p class="bk-eyebrow">Chapter II · Hampi</p><h3>The Kishkindha Chapter</h3><p class="bk-quote">Where stone remembers, and faith lives on.</p><div class="bk-orn"></div>' +
+      '<p class="bd">Long before Hampi became an imperial capital, these hills and riverbanks were remembered as Kishkindha. Here, the paths of Lord Rama and Hanuman Ji converged, Shabari\'s devotion became eternal, and the search for Sita Mata gathered momentum.</p>' +
+      '<p class="bd">Begin the day with a sunrise at Anjanadri, revered as the birthplace of Lord Hanuman. Sit by Pampa Sarovar, read the Ramayan in the stone reliefs of Hazara Rama, and drift on the Tungabhadra in a coracle as the granite hills turn gold.</p>' +
+      '<p class="bd">Some journeys leave you with photographs. Others leave you with stories.</p>',
+    right: '<figure class="bk-fig"><img src="assets/img/bk-kishkindha.webp" alt="The ruins of Hampi among granite hills at sunset"></figure><p class="bk-label">What you will experience</p>' +
+      '<ul class="bk-list"><li>Virupaksha Temple</li><li>Hemakuta Hill at sunset</li><li>Kodandarama Temple</li><li>Yantrodharaka Hanuman</li><li>Anjanadri Hill</li><li>Pampa Sarovar</li><li>Hazara Rama</li><li>Kishkindha Under the Stars</li></ul>' +
+      '<p class="bk-in"><b>3 or 4 nights.</b> The 4-night journey adds a day for the Vittala Temple and the grandeur of Vijayanagara.</p>' },
+  { tab: "The Crossing",
+    left: '<p class="bk-eyebrow">Chapter III · The Last Chapter, part one</p><h3>The Crossing</h3><p class="bk-quote">At Dhanushkodi, India narrows towards the sea. Across lies Lanka.</p><div class="bk-orn"></div>' +
+      '<p class="bd">Rameswaram is where the story pauses before Lanka, a sacred landscape of prayer framed by devotion to Lord Shiva. The chapter opens with purification at Agni Theertham and darshan at the Ramanathaswamy Temple, where Lord Rama is remembered to have worshipped Shiva.</p>' +
+      '<p class="bd">At dawn, the land tapers into the sea at Dhanushkodi, and the chain of shoals that tradition remembers as Ram Setu stretches towards Lanka. Here the story remembers Nala and Neel, and the Vanara Sena who made the impossible crossing possible.</p>',
+    right: '<figure class="bk-fig"><img src="assets/img/bk-crossing.webp" alt="Ancient ruins on the shore at Dhanushkodi"></figure><p class="bk-label">What you will experience</p>' +
+      '<ul class="bk-list"><li>Agni Theertham</li><li>Ramanathaswamy Temple</li><li>Sacred Vedic havan</li><li>Dhanushkodi at dawn</li><li>Ram Setu</li><li>Panchmukhi Hanuman</li><li>Kothandaramaswamy Temple</li></ul>' +
+      '<p class="bk-in"><b>2 nights.</b> Travel it on its own, or as the first part of The Last Chapter.</p>' },
+  { tab: "The Search",
+    left: '<p class="bk-eyebrow">Chapter III · The Last Chapter, part two</p><h3>The Search</h3><p class="bk-quote">Hanuman has entered Lanka. Sita Mata is still missing. The search begins.</p><div class="bk-orn"></div>' +
+      '<p class="bd">In Sri Lanka, the story travels deeper. At Munneswaram, where devotion met the ocean, and beneath the ancient rock of Sigiriya. Into the green hills of Ramboda, where the Sri Bhakta Hanuman Temple keeps the memory of his search alive.</p>' +
+      '<p class="bd">In the misty valleys of Nuwara Eliya lies the most tender part of the epic, the Seetha Amman Temple and Ashok Vatika, where Sita Mata waited and refused to surrender her faith. Then Ravana Falls at Ella, the mountain Hanuman carried at Rumassala, and Kelaniya, where Vibhishana made his choice.</p>',
+    right: '<figure class="bk-fig"><img src="assets/img/bk-search.webp" alt="Sigiriya rock lit at night"></figure><p class="bk-label">What you will experience</p>' +
+      '<ul class="bk-list"><li>Munneswaram</li><li>Sigiriya</li><li>Sri Bhakta Hanuman Temple</li><li>Seetha Amman Temple</li><li>Ashok Vatika</li><li>Divurumpola</li><li>Ravana Falls, Ella</li><li>Rumassala</li><li>Kelaniya</li></ul>' +
+      '<p class="bk-in"><b>6 or 7 nights.</b> Travel it on its own, or with the Crossing and the Return.</p>' },
+  { tab: "The Return",
+    left: '<p class="bk-eyebrow">Chapter III · The Last Chapter, part three</p><h3>The Return</h3><p class="bk-quote">And now the story does what every great journey asks of us. It goes home.</p><div class="bk-orn"></div>' +
+      '<p class="bd">For days you followed Lord Rama away from home. In Ayodhya, you follow him home. The chapter begins slowly, with Hanuman Garhi and Tulsi Smarak Bhawan, and then darshan at Shri Ram Janmabhoomi.</p>' +
+      '<p class="bd">As daylight fades, the story moves to the Saryu, where the lamps of the evening aarti are raised. The next morning, Kanak Bhawan and Dashrath Mahal, the father, the kingdom and the home, and suddenly the journey feels complete.</p>',
+    right: '<figure class="bk-fig"><img src="assets/img/bk-return.webp" alt="Diyas on the ghats of the Saryu at Ayodhya"></figure><p class="bk-label">What you will experience</p>' +
+      '<ul class="bk-list"><li>Hanuman Garhi</li><li>Tulsi Smarak Bhawan</li><li>Shri Ram Janmabhoomi</li><li>Nageshwarnath</li><li>Saryu Aarti</li><li>Kanak Bhawan</li><li>Dashrath Mahal</li></ul>' +
+      '<p class="bk-in"><b>2 nights.</b> Travel it on its own, or as the homecoming that completes The Last Chapter.</p>' }
+];
+
+/* The experience slider. [image, title, line, object-position] */
+var PROMISE = [
+  ["art-bow.webp",       "The story before the place", "At each sacred site, a scholar or storyteller receives you and opens the story, before you see the place for yourself.", "30% 50%"],
+  ["pr-temple.webp",     "Privileged darshan",         "Darshans at Kalaram, Trimbakeshwar, Virupaksha and Shri Ram Janmabhoomi, planned and assisted so you are simply present.", "50% 50%"],
+  ["exp-bhajan.webp",    "Evenings of devotion",       "Ram bhajans and naam sankirtan by the Godavari, and a private Bhajan Sandhya in Hampi as the day closes.", "50% 50%"],
+  ["pr-narasimha.webp",  "Kishkindha under the stars", "An intimate evening of Ramayan storytelling, traditional lamps and live instrumental music, followed by a private dinner.", "50% 40%"],
+  ["pr-ramkund.webp",    "On the sacred waters",       "The Godavari Aarti at Ramkund, an optional holy snan, and a coracle on the Tungabhadra.", "50% 60%"],
+  ["pr-court.webp",      "Conversations that stay",    "The meaning of vanvaas, the strength of Sita Mata and the devotion of Hanuman Ji, explored in discourse.", "50% 50%"],
+  ["pr-anjaneri.webp",   "Where Hanuman Ji was born",  "Anjanadri in Hampi and Anjaneri near Nashik, each revered as his birthplace, reached at your own pace.", "50% 50%"],
+  ["pr-ayodhya.webp",    "Received as family",         "A warm ADHYAY welcome on arrival, and a Journey Host beside you from the first darshan to the farewell.", "40% 60%"]
+];
+
+/* Hospitality tiers, from the journey decks. */
+var TIERS = [
+  { name: "Platinum", line: "The complete ADHYAY journey, with every detail looked after.",
+    list: ["Carefully chosen luxury stays", "A private luxury SUV for every transfer", "A dedicated Journey Host, with local guides at key visits"] },
+  { name: "Elite", line: "More space, and more personal care.",
+    list: ["Suite stays at the selected hotels", "A dedicated assistant through the journey", "Priority coordination of darshans"] },
+  { name: "Elite+", line: "Our most personal way to travel.",
+    list: ["Luxury or signature suites", "A personal guide at your side throughout", "Concierge support, with Pranaam airport services"], noPranaam: "Personalised concierge support for any request" }
+];
+
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+  function el(id){ return document.getElementById(id); }
+  function clamp(v, a, b){ return Math.max(a, Math.min(b, v)); }
+  function money(n){
+    var s = String(Math.round(n)), last3 = s.slice(-3), rest = s.slice(0, -3);
+    if (rest) last3 = "," + last3;
+    return "₹" + rest.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + last3;
+  }
+  var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"], DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  function pd(s){ var a = s.split("-").map(Number); return new Date(Date.UTC(a[0], a[1] - 1, a[2])); }
+  function rng(a, b, long){
+    var x = pd(a), y = pd(b), M = long ? MONTHS : MON;
+    var tail = long ? " " + y.getUTCFullYear() : "";
+    return x.getUTCMonth() === y.getUTCMonth()
+      ? x.getUTCDate() + " – " + y.getUTCDate() + " " + M[y.getUTCMonth()] + tail
+      : x.getUTCDate() + " " + M[x.getUTCMonth()] + " – " + y.getUTCDate() + " " + M[y.getUTCMonth()] + tail;
+  }
+  /* dates of a Last Chapter departure for a given set of parts */
+  function partDates(dep, len, parts, long){
+    var P = dep.d[len], sel = parts.slice().sort();
+    var joined = sel.every(function(k, i){ return i === 0 || k === sel[i - 1] + 1; });
+    if (joined) return rng(P[sel[0]][0], P[sel[sel.length - 1]][1], long);
+    return sel.map(function(k){ return rng(P[k][0], P[k][1], long); }).join(", then ");
+  }
+  function lastPrice(len, parts, tier){ var T = PRICES.last[len][tier || 0]; return parts.reduce(function(s, k){ return s + T[k]; }, 0); }
+
+  /* ---------------- split headings into rising words ---------------- */
+  document.querySelectorAll(".split").forEach(function(h){
+    var i = 0;
+    (function walk(node){
+      [].slice.call(node.childNodes).forEach(function(n){
+        if (n.nodeType === 3){
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(t){
+            if (!t) return;
+            if (/^\s+$/.test(t)) { frag.appendChild(document.createTextNode(t)); return; }
+            var w = document.createElement("span"); w.className = "w";
+            var s = document.createElement("span"); s.textContent = t; s.style.transitionDelay = (i++ * 0.06) + "s";
+            w.appendChild(s); frag.appendChild(w);
+          });
+          n.parentNode.replaceChild(frag, n);
+        } else if (n.nodeType === 1 && n.tagName !== "BR") walk(n);
+      });
+    })(h);
+  });
+
+  /* ---------------- reveal on scroll ---------------- */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { rootMargin: "0px 0px -9% 0px", threshold: .1 });
+  function watch(scope){ (scope || document).querySelectorAll(".rv,.reveal-img,.split,.draw").forEach(function(n){ io.observe(n); }); }
+  watch();
+
+  /* ---------------- modal art ---------------- */
+  var modal = el("lead"), form = el("leadform"), lastFocus = null;
+  var arts = modal.querySelectorAll("[data-art]");
+  function setArt(a){ arts.forEach(function(x){ x.classList.toggle("on", x.getAttribute("data-art") === a); }); }
+
+  /* ---------------- hero: embers rising like diya sparks ---------------- */
+  (function(){
+    var c = el("embers"); if (!c || reduce) return;
+    var ctx = c.getContext("2d"), W = 0, H = 0, dpr = Math.min(2, window.devicePixelRatio || 1), ps = [], on = false, looping = false;
+    function size(){ W = c.clientWidth; H = c.clientHeight; c.width = W * dpr; c.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+    function spawn(first){ return { x: Math.random() * W, y: first ? Math.random() * H : H + 10, r: .6 + Math.random() * 1.5, vy: .25 + Math.random() * .6, sw: Math.random() * 6.28, ss: .004 + Math.random() * .012, a: .25 + Math.random() * .5, f: Math.random() * 6.28 }; }
+    size(); for (var i = 0; i < 46; i++) ps.push(spawn(true));
+    addEventListener("resize", size);
+    function tick(){
+      if (!on){ looping = false; return; }
+      ctx.clearRect(0, 0, W, H); ctx.globalCompositeOperation = "lighter";
+      for (var k = 0; k < ps.length; k++){
+        var p = ps[k]; p.y -= p.vy; p.sw += p.ss; p.x += Math.sin(p.sw) * .28; p.f += .045;
+        var al = p.a * (.62 + .38 * Math.sin(p.f)) * clamp(p.y / (H * .3), 0, 1);
+        var g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 7);
+        g.addColorStop(0, "rgba(255,230,160," + al + ")"); g.addColorStop(.35, "rgba(240,190,90," + al * .45 + ")"); g.addColorStop(1, "rgba(240,170,60,0)");
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(p.x, p.y, p.r * 7, 0, 6.283); ctx.fill();
+        if (p.y < -14) ps[k] = spawn(false);
+      }
+      requestAnimationFrame(tick);
+    }
+    new IntersectionObserver(function(es){ on = es[0].isIntersecting; if (on && !looping){ looping = true; requestAnimationFrame(tick); } }).observe(c);
+  })();
+
+  /* ---------------- manifesto: words light as you read ---------------- */
+  var mf = el("manifesto"), mWords = [];
+  (function(){
+    function wrapText(node){
+      [].slice.call(node.childNodes).forEach(function(n){
+        if (n.nodeType === 3){
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(t){
+            if (!t) return;
+            if (/^\s+$/.test(t)) { frag.appendChild(document.createTextNode(t)); return; }
+            var s = document.createElement("span"); s.className = "mw"; s.textContent = t; frag.appendChild(s); mWords.push(s);
+          });
+          n.parentNode.replaceChild(frag, n);
+        } else if (n.nodeType === 1) wrapText(n);
+      });
+    }
+    wrapText(mf);
+    if (reduce) mWords.forEach(function(w){ w.classList.add("on"); });
+  })();
+
+  /* ---------------- scroll choreography: parallax, thread, manifesto ---------------- */
+  var nav = el("nav"), mcta = el("mcta"), hero = el("top"), heroImg = el("heroImg"), heroIn = el("heroIn");
+  var thread = el("thread"), tFill = el("threadFill"), tBead = el("threadBead"), marks = [];
+  document.querySelectorAll("[data-thread]").forEach(function(s){
+    var a = document.createElement("a"); a.href = "#" + s.id; a.setAttribute("aria-label", s.getAttribute("data-thread"));
+    a.innerHTML = "<i></i><span>" + s.getAttribute("data-thread") + "</span>";
+    thread.appendChild(a); marks.push({ a: a, s: s, pos: 0 });
+  });
+  function layoutMarks(){
+    var max = document.documentElement.scrollHeight - innerHeight;
+    marks.forEach(function(m){ m.pos = clamp((m.s.offsetTop - innerHeight * .35) / max, 0, 1); m.a.style.top = (m.pos * 100) + "%"; });
+  }
+  layoutMarks(); addEventListener("load", layoutMarks); addEventListener("resize", layoutMarks);
+  var ticking = false;
+  function onScroll(){
+    var y = scrollY, hh = hero.offsetHeight, max = document.documentElement.scrollHeight - innerHeight;
+    nav.classList.toggle("scrolled", y > 24);
+    mcta.classList.toggle("show", y > hh * .72);
+    if (!reduce && y < hh * 1.2){
+      var p = clamp(y / hh, 0, 1);
+      heroImg.style.transform = "translateY(" + (p * 70) + "px) scale(" + (1.04 + p * .12) + ")";
+      heroIn.style.transform = "translateY(" + (p * -46) + "px)";
+      heroIn.style.opacity = String(1 - p * 1.25);
+    }
+    var prog = clamp(y / max, 0, 1);
+    thread.classList.toggle("show", y > hh * .6);
+    tFill.style.transform = "scaleY(" + prog + ")";
+    tBead.style.top = (prog * 100) + "%";
+    marks.forEach(function(m){ m.a.classList.toggle("on", prog >= m.pos - .002); });
+    if (!reduce && mWords.length){
+      var r = mf.getBoundingClientRect();
+      var mp = clamp((innerHeight * .82 - r.top) / (r.height + innerHeight * .3), 0, 1);
+      var lit = Math.round(mp * mWords.length * 1.15);
+      mWords.forEach(function(w, i){ w.classList.toggle("on", i < lit); });
+    }
+    ticking = false;
+  }
+  addEventListener("scroll", function(){ if (!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+
+  /* =======================================================================
+     THE BOOK: a turn clones the outgoing page onto one rotating leaf.
+     Below 760px, or with reduced motion, pages cross-fade instead.
+     ======================================================================= */
+  var bkL = el("bkL"), bkR = el("bkR"), bkInner = el("bkInner"), bkTabs = el("bkTabs"), bkDots = el("bkDots"),
+      bkCount = el("bkCount"), bkPrev = el("bkPrev"), bkNext = el("bkNext"), cur = 0, busy = false;
+  var COUNT = ["Chapter I", "Chapter II", "Chapter III · part one", "Chapter III · part two", "Chapter III · part three"];
+  function flat(){ return reduce || window.matchMedia("(max-width:760px)").matches; }
+  function paint(i){ bkL.innerHTML = SPREADS[i].left; bkR.innerHTML = SPREADS[i].right; }
+  function chrome(i){
+    bkCount.textContent = COUNT[i];
+    bkPrev.disabled = i === 0; bkNext.disabled = i === SPREADS.length - 1;
+    [].forEach.call(bkTabs.children, function(b, n){ b.setAttribute("aria-selected", String(n === i)); });
+    [].forEach.call(bkDots.children, function(b, n){ b.setAttribute("aria-current", String(n === i)); });
+  }
+  function go(i){
+    if (busy || i === cur || i < 0 || i >= SPREADS.length) return;
+    var fwd = i > cur, from = cur; cur = i; chrome(i);
+    if (flat()){
+      bkL.style.opacity = bkR.style.opacity = "0";
+      setTimeout(function(){ paint(i); bkL.style.opacity = bkR.style.opacity = "1"; }, 200);
+      return;
+    }
+    busy = true;
+    var leaf = document.createElement("div"); leaf.className = "leaf " + (fwd ? "fwd" : "bwd"); leaf.setAttribute("aria-hidden", "true");
+    var front = document.createElement("div"), back = document.createElement("div");
+    front.className = "face fr"; back.className = "face bk";
+    if (fwd){
+      front.innerHTML = SPREADS[from].right; back.innerHTML = SPREADS[i].left;
+      bkL.innerHTML = SPREADS[from].left; bkR.innerHTML = SPREADS[i].right;
+    } else {
+      front.style.borderRadius = "10px 0 0 10px"; back.style.borderRadius = "0 10px 10px 0";
+      front.innerHTML = SPREADS[from].left; back.innerHTML = SPREADS[i].right;
+      bkR.innerHTML = SPREADS[from].right; bkL.innerHTML = SPREADS[i].left;
+    }
+    leaf.appendChild(front); leaf.appendChild(back); bkInner.appendChild(leaf);
+    setTimeout(function(){ leaf.remove(); paint(cur); busy = false; }, 800);
+  }
+  SPREADS.forEach(function(s, i){
+    var t = document.createElement("button"); t.type = "button"; t.setAttribute("role", "tab"); t.textContent = s.tab;
+    t.addEventListener("click", function(){ go(i); }); bkTabs.appendChild(t);
+    var d = document.createElement("button"); d.type = "button"; d.setAttribute("aria-label", COUNT[i]);
+    d.addEventListener("click", function(){ go(i); }); bkDots.appendChild(d);
+  });
+  bkPrev.addEventListener("click", function(){ go(cur - 1); });
+  bkNext.addEventListener("click", function(){ go(cur + 1); });
+  paint(0); chrome(0);
+  var bookSeen = false;
+  new IntersectionObserver(function(es){ bookSeen = es[0].isIntersecting; }, { threshold: .25 }).observe(el("bookEl"));
+  document.addEventListener("keydown", function(e){
+    if (!bookSeen || !modal.hidden) return;
+    if (e.key === "ArrowRight") { e.preventDefault(); go(cur + 1); }
+    if (e.key === "ArrowLeft")  { e.preventDefault(); go(cur - 1); }
+  });
+  (function(){
+    var sx = 0, sy = 0, b = el("bookEl");
+    b.addEventListener("touchstart", function(e){ sx = e.changedTouches[0].clientX; sy = e.changedTouches[0].clientY; }, { passive: true });
+    b.addEventListener("touchend", function(e){
+      var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.6) go(dx < 0 ? cur + 1 : cur - 1);
+    }, { passive: true });
+  })();
+  /* the chapter cards under the hero open their chapter */
+  document.querySelectorAll(".ca[data-chapter]").forEach(function(a){
+    a.addEventListener("click", function(e){
+      e.preventDefault();
+      var i = +a.getAttribute("data-chapter");
+      el("book").scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+      setTimeout(function(){ go(i); }, reduce ? 0 : 650);
+    });
+  });
+
+  /* =======================================================================
+     THE JOURNEYS STAGE: chapter, length and, for The Last Chapter, its parts
+     ======================================================================= */
+  (function(){
+    var art = el("stArt"), jd = el("stJd"), lenEl = el("stLen"), partsEl = el("stParts"), fill = el("stFill");
+    var chBtns = el("stCh").querySelectorAll("[data-ch]"), nodes = el("stRoute").querySelectorAll("[data-part]");
+    var st = { ch: "panchavati", len: 0, parts: [0, 1, 2] }, first = true, imgs = {};
+    function img(src){
+      if (!imgs[src]){ var im = document.createElement("img"); im.src = src; im.alt = ""; im.loading = "lazy"; art.insertBefore(im, art.firstChild); imgs[src] = im; }
+      return imgs[src];
+    }
+    function journeyKey(){
+      if (st.ch !== "last") return STAGE[st.ch].lens[st.len].k;
+      var p = st.parts.join("");
+      if (p === "012") return st.len ? "last11" : "last10";
+      return { "01": "lastRS", "12": "lastSA", "02": "lastRA", "0": "lastR", "1": "lastS", "2": "lastA" }[p];
+    }
+    function render(){
+      var S = STAGE[st.ch];
+      chBtns.forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-ch") === st.ch)); });
+      lenEl.innerHTML = "";
+      S.lens.forEach(function(L, i){
+        var b = document.createElement("button"); b.type = "button"; b.textContent = L.label; b.setAttribute("aria-pressed", String(i === st.len));
+        b.addEventListener("click", function(){ st.len = i; render(); }); lenEl.appendChild(b);
+      });
+      partsEl.hidden = st.ch !== "last";
+      var name, meta, days, price, nights, src, lbl;
+      if (st.ch === "last"){
+        nodes.forEach(function(n){ n.setAttribute("aria-pressed", String(st.parts.indexOf(+n.getAttribute("data-part")) > -1)); });
+        var lo = Math.min.apply(null, st.parts), hi = Math.max.apply(null, st.parts);
+        fill.style.left = (100 / 6 + lo * 100 / 3) + "%"; fill.style.width = ((hi - lo) * 100 / 3) + "%";
+        nights = st.parts.reduce(function(s, k){ return s + S.parts[k].nights[st.len]; }, 0);
+        name = st.parts.length === 3 ? "The Last Chapter, complete" : st.parts.map(function(k){ return S.parts[k].name; }).join(" and ");
+        meta = st.parts.map(function(k){ return S.parts[k].place; }).join(" · ") + " · " + nights + " nights";
+        days = st.parts.map(function(k){ return [S.parts[k].name + " · " + S.parts[k].place, S.parts[k].text]; });
+        price = lastPrice(st.len, st.parts);
+        src = S.imgs[st.parts[0]];
+        lbl = st.parts.length === 3 ? "Nights, three parts" : st.parts.length === 2 ? "Nights, two parts" : "Nights";
+      } else {
+        var L = S.lens[st.len], j = CONFIG.journeys[L.k];
+        name = j.name; meta = j.nights + " · " + j.route; days = L.days; price = j.p; nights = j.n; src = S.img; lbl = S.place;
+      }
+      var k = journeyKey();
+      var im = img(src); Object.keys(imgs).forEach(function(s){ imgs[s].classList.toggle("on", imgs[s] === im); });
+      el("stNum").textContent = nights; el("stNumL").textContent = lbl;
+      function write(){
+        el("stName").textContent = name; el("stMeta").textContent = meta;
+        el("stDays").innerHTML = days.map(function(d, i){ return "<li><b>" + (st.ch === "last" ? "" : "Day " + (i + 1) + " · ") + d[0] + "</b>" + d[1] + "</li>"; }).join("");
+        el("stDays").classList.toggle("parts", st.ch === "last");
+        el("stPrice").textContent = money(price);
+        el("stBtn").setAttribute("data-journey", k);
+        jd.classList.remove("swap");
+      }
+      if (first){ first = false; write(); } else { jd.classList.add("swap"); setTimeout(write, 240); }
+    }
+    chBtns.forEach(function(b){ b.addEventListener("click", function(){ var c = b.getAttribute("data-ch"); if (c === st.ch) return; st.ch = c; st.len = 0; st.parts = [0, 1, 2]; render(); }); });
+    nodes.forEach(function(n){ n.addEventListener("click", function(){
+      var k = +n.getAttribute("data-part"), i = st.parts.indexOf(k);
+      if (i > -1){ if (st.parts.length === 1) return; st.parts.splice(i, 1); } else { st.parts.push(k); st.parts.sort(); }
+      render();
+    }); });
+    render();
+  })();
+
+  /* =======================================================================
+     THE EXPERIENCE SLIDER: drag, swipe, arrows, progress
+     ======================================================================= */
+  (function(){
+    var tr = el("ptrack"), bar = el("pbar"), prev = el("pPrev"), next = el("pNext");
+    PROMISE.forEach(function(p, i){
+      var s = document.createElement("article"); s.className = "ps";
+      s.innerHTML = '<img src="assets/img/' + p[0] + '" alt="" loading="lazy" draggable="false" style="object-position:' + p[3] + '">' +
+        '<div class="ps-body"><span class="ps-n">' + (i < 9 ? "0" : "") + (i + 1) + '</span><h3>' + p[1] + '</h3><p>' + p[2] + '</p></div>';
+      tr.appendChild(s);
+    });
+    function step(){ var c = tr.children[0]; return c ? c.getBoundingClientRect().width + 18 : 300; }
+    function upd(){
+      var max = tr.scrollWidth - tr.clientWidth, f = max > 0 ? tr.scrollLeft / max : 0, w = clamp(tr.clientWidth / tr.scrollWidth, .12, 1);
+      bar.style.width = (w * 100) + "%"; bar.style.transform = "translateX(" + (f * (1 / w - 1) * 100) + "%)";
+      prev.disabled = tr.scrollLeft < 4; next.disabled = tr.scrollLeft > max - 4;
+    }
+    prev.addEventListener("click", function(){ tr.scrollBy({ left: -step(), behavior: "smooth" }); });
+    next.addEventListener("click", function(){ tr.scrollBy({ left: step(), behavior: "smooth" }); });
+    tr.addEventListener("scroll", upd, { passive: true }); addEventListener("resize", upd); upd();
+    var down = false, sx = 0, sl = 0, moved = 0;
+    tr.addEventListener("pointerdown", function(e){ if (e.pointerType !== "mouse") return; down = true; moved = 0; sx = e.clientX; sl = tr.scrollLeft; });
+    addEventListener("pointermove", function(e){
+      if (!down) return; var dx = e.clientX - sx; moved = Math.abs(dx);
+      if (moved > 4) tr.classList.add("drag"); tr.scrollLeft = sl - dx;
+    });
+    addEventListener("pointerup", function(){
+      if (!down) return; down = false;
+      if (tr.classList.contains("drag")){
+        tr.classList.remove("drag");
+        var i = Math.round(tr.scrollLeft / step()); tr.scrollTo({ left: i * step(), behavior: "smooth" });
+      }
+    });
+  })();
+
+  /* =======================================================================
+     HOSPITALITY: three compact tiers, prices for the chosen chapter
+     ======================================================================= */
+  (function(){
+    var chips = el("hsChips"), cards = el("hsCards"), fine = el("hsFine"), cur = "", T = [0, 1, 2];
+    var CH = {
+      panchavati: { label: "Panchavati", rows: [["2 nights · 3 days", PRICES.panch2], ["3 nights · 4 days", PRICES.panch3]], pranaam: true },
+      kishkindha: { label: "Kishkindha", rows: [["3 nights · 4 days", PRICES.kish3], ["4 nights · 5 days", PRICES.kish4]], pranaam: false },
+      last: { label: "The Last Chapter", pranaam: true,
+        rows: [["All three parts · 11 days", T.map(function(t){ return lastPrice(0, [0, 1, 2], t); })],
+               ["All three parts · 12 days", T.map(function(t){ return lastPrice(1, [0, 1, 2], t); })]],
+        more: T.map(function(t){ return Math.min.apply(null, PRICES.last[0][t]); }) }
+    };
+    var FINE = "Per person, for two travelling together, plus GST. Every tier includes all meals, the darshans and storytelling sessions, and a Journey Host by your side. Travelling solo? We will share the solo rate.";
+    function card(t, i, c){
+      var list = t.list.slice(); if (t.noPranaam && !c.pranaam) list[2] = t.noPranaam;
+      return '<article class="hs-card' + (i === 2 ? " sig" : "") + '">' +
+        '<h3>' + t.name + '</h3><p class="hs-line">' + t.line + '</p>' +
+        '<ul>' + list.map(function(x){ return "<li>" + x + "</li>"; }).join("") + '</ul>' +
+        '<dl class="hs-price">' + c.rows.map(function(r){ return "<div><dt>" + r[0] + "</dt><dd>" + money(r[1][i]) + "</dd></div>"; }).join("") +
+        (c.more ? '<div class="more"><dt>Or one part, from</dt><dd>' + money(c.more[i]) + "</dd></div>" : "") + "</dl></article>";
+    }
+    function set(k){
+      if (k === cur) return; var first = !cur; cur = k;
+      [].forEach.call(chips.children, function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-k") === k)); });
+      var c = CH[k], htm = TIERS.map(function(t, i){ return card(t, i, c); }).join("");
+      var f = FINE + (k === "last" ? " The Last Chapter rates apply to the January and February departures." : "");
+      if (first){ cards.innerHTML = htm; fine.textContent = f; return; }
+      cards.classList.add("swap");
+      setTimeout(function(){ cards.innerHTML = htm; fine.textContent = f; cards.classList.remove("swap"); }, 240);
+    }
+    Object.keys(CH).forEach(function(k){
+      var b = document.createElement("button"); b.type = "button"; b.className = "jchip"; b.setAttribute("data-k", k); b.textContent = CH[k].label;
+      b.addEventListener("click", function(){ set(k); }); chips.appendChild(b);
+    });
+    set("panchavati");
+  })();
+
+  /* =======================================================================
+     DEPARTURES PLANNER: chapter, then departure, then the exact dates
+     ======================================================================= */
+  var plState = { ch: "panchavati", d: PK_DEPS[0][0] };
+  (function(){
+    var months = el("plMonths"), chips = el("plChips"), out = el("plOut"), first = true;
+    var CH = [["panchavati", "Panchavati", "panch2", "assets/img/st-panchavati.webp"], ["kishkindha", "Kishkindha", "kish3", "assets/img/st-kishkindha.webp"], ["last", "The Last Chapter", "last10", "assets/img/card-lastchapter.webp"]];
+    CH.forEach(function(c){
+      var b = document.createElement("button"); b.type = "button"; b.className = "jchip"; b.setAttribute("data-k", c[0]); b.textContent = c[1];
+      b.addEventListener("click", function(){ if (plState.ch === c[0]) return; plState.ch = c[0]; plState.d = c[0] === "last" ? LAST_DEPS[0].v : PK_DEPS[0][0]; build(); render(); });
+      chips.appendChild(b);
+    });
+    function build(){
+      months.innerHTML = ""; var groups = {};
+      var list = plState.ch === "last" ? LAST_DEPS.map(function(d){ return [d.v, d.d[0][0][0]]; }) : PK_DEPS.map(function(d){ return [d[0], d[1]]; });
+      list.forEach(function(d){
+        var dt = pd(d[1]), key = MONTHS[dt.getUTCMonth()] + " " + dt.getUTCFullYear();
+        if (!groups[key]){
+          var m = document.createElement("div"); m.className = "month"; m.innerHTML = "<h4>" + key + "</h4><div class=\"days\"></div>";
+          months.appendChild(m); groups[key] = m.querySelector(".days");
+        }
+        var b = document.createElement("button"); b.type = "button"; b.className = "day"; b.setAttribute("data-d", d[0]);
+        b.setAttribute("aria-label", dt.getUTCDate() + " " + key);
+        b.innerHTML = "<b>" + dt.getUTCDate() + "</b><span>" + DOW[dt.getUTCDay()] + "</span>";
+        b.addEventListener("click", function(){ plState.d = d[0]; render(); });
+        groups[key].appendChild(b);
+      });
+    }
+    function render(){
+      chips.querySelectorAll(".jchip").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-k") === plState.ch)); });
+      months.querySelectorAll(".day").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-d") === plState.d)); });
+      var c = CH.filter(function(x){ return x[0] === plState.ch; })[0], j = CONFIG.journeys[c[2]];
+      function write(){
+        if (plState.ch === "last"){
+          var dep = LAST_DEPS.filter(function(x){ return x.v === plState.d; })[0], P = dep.d[0];
+          el("plDates").textContent = rng(P[0][0], P[2][1], true);
+          el("plNote").textContent = "The Crossing " + rng(P[0][0], P[0][1]) + " · The Search " + rng(P[1][0], P[1][1]) + " · The Return " + rng(P[2][0], P[2][1]) + ". The 12-day journey returns a day later.";
+          el("plName").textContent = "The Last Chapter";
+          el("plRoute").textContent = "Rameswaram · Sri Lanka · Ayodhya · take any one part, any two, or all three";
+          el("plPrice").textContent = money(PRICES.last[0][0][0]);
+        } else {
+          var d = PK_DEPS.filter(function(x){ return x[0] === plState.d; })[0];
+          el("plDates").textContent = rng(d[1], d[2], true);
+          el("plNote").textContent = d[3] ? d[3] + "." : "";
+          el("plName").textContent = j.name;
+          el("plRoute").textContent = plState.ch === "panchavati" ? "Nashik · Panchavati · Trimbakeshwar · 2 or 3 nights" : "Hampi · Kishkindha · Anegundi · 3 or 4 nights";
+          el("plPrice").textContent = money(j.p);
+        }
+        el("plImg").src = c[3];
+        out.classList.remove("swap");
+      }
+      if (first){ first = false; write(); } else { out.classList.add("swap"); setTimeout(write, 240); }
+    }
+    el("plBtn").addEventListener("click", function(){ openModal(CH.filter(function(x){ return x[0] === plState.ch; })[0][2], plState.d); });
+    build(); render();
+  })();
+
+  /* =======================================================================
+     THE ENQUIRY FORM
+     ======================================================================= */
+  var selJ = el("f-journey"), selD = el("f-date"), selR = el("f-range"), selC = el("f-connect"), hint = el("j-hint");
+  (function(){
+    selJ.innerHTML = '<option value="">Select a journey</option>';
+    GROUPS.forEach(function(g){
+      var og = document.createElement("optgroup"); og.label = g[1];
+      Object.keys(CONFIG.journeys).forEach(function(k){
+        var j = CONFIG.journeys[k]; if (j.grp !== g[0]) return;
+        var o = document.createElement("option"); o.value = k; o.textContent = j.label; og.appendChild(o);
+      });
+      selJ.appendChild(og);
+    });
+    var C = [["morning", "Call me in the morning · 9 am to 12 pm"], ["afternoon", "Call me in the afternoon · 12 pm to 4 pm"],
+             ["evening", "Call me in the evening · 4 pm to 8 pm"], ["anytime", "Call me at any time"], ["whatsapp", "Please message me on WhatsApp instead"]];
+    selC.innerHTML = C.map(function(c){ return '<option value="' + c[0] + '">' + c[1] + "</option>"; }).join("");
+  })();
+
+  function fillSelect(sel, rows, placeholder){
+    var prev = sel.value;
+    sel.innerHTML = '<option value="">' + placeholder + '</option>';
+    rows.forEach(function(r){
+      if (r.group){ var og = document.createElement("optgroup"); og.label = r.group; r.rows.forEach(function(x){ og.appendChild(opt(x)); }); sel.appendChild(og); }
+      else sel.appendChild(opt(r));
+    });
+    if (prev && [].some.call(sel.options, function(o){ return o.value === prev; })) sel.value = prev;
+  }
+  function opt(r){ var o = document.createElement("option"); o.value = r[0]; o.textContent = r[1]; o.setAttribute("data-score", r[2]); return o; }
+  function pkRows(){ return PK_DEPS.map(function(d){ var x = pd(d[1]); return [d[0], rng(d[1], d[2], true) + " · " + DOW[x.getUTCDay()] + " to " + DOW[pd(d[2]).getUTCDay()], 2]; }); }
+  function lastRows(j){
+    var parts = j && j.parts ? j.parts : [0, 1, 2], len = j && j.len ? j.len : 0;
+    return LAST_DEPS.map(function(d, i){ return [d.v, "Departure " + ["I", "II", "III", "IV"][i] + " · " + partDates(d, len, parts, true), 2]; });
+  }
+  var OTHER = [["own", "On dates of my own", 1], ["later", "Later in 2027", 1], ["exploring", "Just exploring for now", 0]];
+  function datesFor(j){
+    if (!j) return [];
+    if (j.fam === "pk") return pkRows().concat(OTHER);
+    if (j.fam === "last") return lastRows(j).concat(OTHER);
+    return [{ group: "Panchavati and Kishkindha", rows: pkRows() }, { group: "The Last Chapter", rows: lastRows() }, { group: "Something else", rows: OTHER }];
+  }
+  function onJourney(){
+    var k = selJ.value;
+    if (!k){ fillSelect(selD, [], "Choose a journey first"); selD.disabled = true; hint.textContent = ""; setArt("bow"); return; }
+    var j = CONFIG.journeys[k];
+    fillSelect(selD, datesFor(j), "Select"); selD.disabled = false;
+    hint.textContent = j.route + " · " + (j.priceOnRequest ? "We will shape the journey and its price around the chapters you choose." :
+      "Platinum from " + money(j.p) + " per person, two travelling together, plus GST.") + (j.note ? " " + j.note : "");
+    setArt(j.art); onDate();
+  }
+  function onDate(){ el("own-wrap").hidden = selD.value !== "own"; }
+  function onConnect(){
+    el("c-hint").textContent = CONFIG.tidycalUrl ? "Once you send your enquiry, you can pick a time that suits you on our calendar." :
+      selC.value === "whatsapp" ? "We will write to you on WhatsApp." : "";
+  }
+  selJ.addEventListener("change", onJourney); selD.addEventListener("change", onDate); selC.addEventListener("change", onConnect);
+  onJourney(); onConnect();
+
+  function openModal(k, dep){
+    lastFocus = document.activeElement;
+    modal.hidden = false; document.body.style.overflow = "hidden";
+    if (k && CONFIG.journeys[k]) { selJ.value = k; onJourney(); }
+    if (dep && [].some.call(selD.options, function(o){ return o.value === dep; })) { selD.value = dep; onDate(); }
+    setTimeout(function(){ (k ? selR : selJ).focus(); }, 80);
+    if (window.fbq) try { fbq("track", "ViewContent", { content_name: "Ramayan enquiry form" }); } catch(e){}
+  }
+  function closeModal(){ modal.hidden = true; document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); }
+  document.addEventListener("click", function(e){
+    var o = e.target.closest("[data-open]");
+    if (o) { e.preventDefault(); openModal(o.getAttribute("data-journey"), o.getAttribute("data-departure")); return; }
+    if (e.target.closest("[data-close]")) closeModal();
+  });
+  document.addEventListener("keydown", function(e){
+    if (modal.hidden) return;
+    if (e.key === "Escape") closeModal();
+    if (e.key === "Tab"){
+      var f = [].filter.call(modal.querySelectorAll("button,input,select,a[href]"), function(x){ return x.offsetParent !== null && !x.disabled; });
+      if (!f.length) return; var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+    }
+  });
+  /* clear a field's message as soon as it is answered */
+  function clearErr(e){ var f = e.target.closest(".field"); var m = f && f.querySelector(".err"); if (m) m.textContent = ""; }
+  form.addEventListener("change", clearErr); form.addEventListener("input", clearErr);
+  el("f-phone").addEventListener("input", function(e){ e.target.value = e.target.value.replace(/[^\d]/g, "").slice(0, 15); });
+
+  function err(id, msg){ var n = el(id); if (n) n.textContent = msg || ""; }
+  function optText(sel){ var o = sel.options[sel.selectedIndex]; if (!o) return ""; var g = o.parentNode && o.parentNode.label; return (g ? g + ": " : "") + o.textContent; }
+  function validate(){
+    var okv = true, j = selJ.value, d = selD.value, t = el("f-trav").value, r = selR.value;
+    var name = form.name.value.trim(), phone = form.phone.value.trim(), email = form.email.value.trim(), cc = form.cc.value;
+    ["e-journey","e-range","e-date","e-trav","e-name","e-phone","e-email","e-submit"].forEach(function(x){ err(x); });
+    if (!j) { err("e-journey", "Please choose a journey."); okv = false; }
+    if (!r) { err("e-range", "Please choose a range, or ask for our recommendation."); okv = false; }
+    if (j && !d) { err("e-date", "Please choose when, or tell us you are exploring."); okv = false; }
+    if (!t) { err("e-trav", "Please tell us how many are travelling."); okv = false; }
+    if (name.length < 2) { err("e-name", "Please enter your name."); okv = false; }
+    var minLen = cc === "+91" ? 10 : 6;
+    if (phone.length < minLen || (cc === "+91" && !/^[6-9]\d{9}$/.test(phone))) { err("e-phone", "Please enter a valid WhatsApp number."); okv = false; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { err("e-email", "Please enter a valid email address."); okv = false; }
+    if (!okv) return null;
+    var dOpt = selD.options[selD.selectedIndex];
+    return { journey: j, departure: d, dateScore: +(dOpt.getAttribute("data-score") || 0), own_dates: d === "own" ? el("f-own").value.trim() : "",
+             travellers: t, range: r, connect: selC.value, name: name, phone: cc + phone, email: email };
+  }
+
+  /* ---------------- intent scoring ----------------
+     range : covers the chosen journey's Platinum price = 3, asks for our recommendation = 2, below it = 1
+     date  : a named departure = 2, own dates or later = 1, just exploring = 0
+     party : any definite answer = 1, undecided = 0
+     5 and above = high, 3 to 4 = medium, below 3 = low.
+     High and medium go to the CRM for follow-up; low still receives the journey details. */
+  var RANGE = { "upto-2L": [200000, "Up to ₹2 lakh"], "2-4L": [400000, "₹2 lakh to ₹4 lakh"], "4-6L": [600000, "₹4 lakh to ₹6 lakh"],
+                "6L+": [Infinity, "₹6 lakh and above"], advise: [null, "Would value our recommendation"] };
+  function rangeFit(v){
+    var j = CONFIG.journeys[v.journey], r = RANGE[v.range];
+    if (!r || r[0] === null) return "open";
+    if (j.priceOnRequest || r[0] >= j.p) return "yes";
+    return "no";
+  }
+  function score(v){
+    var fit = rangeFit(v), fs = { yes: 3, open: 2, no: 1 }[fit], ds = v.dateScore, ps = v.travellers === "undecided" ? 0 : 1, total = fs + ds + ps;
+    var tier = total >= 5 ? "high" : total >= 3 ? "medium" : "low";
+    return { total: total, tier: tier, fit: fit, price_score: fs, date_score: ds, party_score: ps };
+  }
+
+  function qs(k){ try { return new URLSearchParams(location.search).get(k) || ""; } catch(e){ return ""; } }
+  function cookie(k){ var m = document.cookie.match(new RegExp("(?:^|; )" + k + "=([^;]*)")); return m ? decodeURIComponent(m[1]) : ""; }
+  function uid(){ return "lead-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 10); }
+  function buildPayload(v, sc, eventId){
+    var j = CONFIG.journeys[v.journey];
+    return {
+      event_id: eventId, submitted_at: new Date().toISOString(),
+      name: v.name, whatsapp: v.phone, email: v.email,
+      journey_key: v.journey, journey: (j.grp === "last" ? "The Last Chapter · " : "") + j.label, journey_route: j.route, journey_nights: j.nights,
+      platinum_price: j.p || 0, price_on_request: !!j.priceOnRequest,
+      journey_range: v.range, journey_range_label: RANGE[v.range][1], range_covers_journey: sc.fit,
+      departure: v.departure, departure_label: optText(selD), own_dates: v.own_dates,
+      travellers: v.travellers,
+      preferred_contact: v.connect, preferred_contact_label: selC.options[selC.selectedIndex].textContent,
+      intent_tier: sc.tier, intent_score: sc.total,
+      intent_breakdown: { price: sc.price_score, date: sc.date_score, party: sc.party_score },
+      sales_followup: sc.tier !== "low",
+      crm_stage: sc.tier === "low" ? "Nurture only" : "Priority follow-up",
+      journey_links: j.files.map(function(f){ return new URL(f, location.href).href; }),
+      utm_source: qs("utm_source"), utm_medium: qs("utm_medium"), utm_campaign: qs("utm_campaign"),
+      utm_content: qs("utm_content"), utm_term: qs("utm_term"),
+      fbclid: qs("fbclid"), fbp: cookie("_fbp"), fbc: cookie("_fbc"),
+      page_url: location.href, referrer: document.referrer, user_agent: navigator.userAgent
+    };
+  }
+  /* Getnos Desk: each answer as its own field. Identical payloads within ~15 min
+     come back as data.duplicate, which counts as success. */
+  var deskSubmitting = false;
+  function submitLead(p){
+    if (deskSubmitting) return Promise.resolve({ duplicate: true, skipped: true });
+    deskSubmitting = true;
+    var body = { form: CONFIG.desk.form || "contact", honeypot: "", subject: CONFIG.desk.subject,
+      name: p.name, phone: p.whatsapp, email: p.email,
+      journey: p.journey, journey_key: p.journey_key, journey_route: p.journey_route, journey_nights: p.journey_nights,
+      platinum_price: String(p.platinum_price), journey_range: p.journey_range_label, range_covers_journey: p.range_covers_journey,
+      departure: p.departure_label, own_dates: p.own_dates, travellers: p.travellers,
+      preferred_contact: p.preferred_contact_label,
+      intent_tier: p.intent_tier, intent_score: String(p.intent_score),
+      intent_breakdown: "price " + p.intent_breakdown.price + ", date " + p.intent_breakdown.date + ", party " + p.intent_breakdown.party,
+      sales_followup: p.sales_followup ? "yes" : "no", crm_stage: p.crm_stage,
+      itinerary_links: p.journey_links.join(" | "),
+      event_id: p.event_id, submitted_at: p.submitted_at,
+      utm_source: p.utm_source, utm_medium: p.utm_medium, utm_campaign: p.utm_campaign, utm_content: p.utm_content, utm_term: p.utm_term,
+      fbclid: p.fbclid, fbp: p.fbp, fbc: p.fbc, page: p.page_url, referrer: p.referrer, source: "website" };
+    return fetch(CONFIG.desk.url, {
+      method: "POST", headers: { "Content-Type": "application/json", "Authorization": "Bearer " + CONFIG.desk.apiKey },
+      body: JSON.stringify(body), keepalive: true
+    }).then(function(res){
+      return res.json().catch(function(){ return {}; }).then(function(data){
+        if (data && data.duplicate) return data;
+        if (!res.ok) throw new Error((data && data.message) || ("Lead submit failed (" + res.status + ")"));
+        return data;
+      });
+    }).then(function(d){ deskSubmitting = false; return d; }, function(e){ deskSubmitting = false; throw e; });
+  }
+  function postWebhook(p){
+    if (!CONFIG.webhookUrl) return Promise.resolve();
+    var req = fetch(CONFIG.webhookUrl, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(p), keepalive: true }).catch(function(){});
+    return Promise.race([req, new Promise(function(r){ setTimeout(r, 2500); })]);
+  }
+  /* Where the guest goes next: every enquiry continues to the TidyCal booking page,
+     and TidyCal sends them on to the thank-you page once a time is booked.
+     Until CONFIG.tidycalUrl is filled in, guests go straight to the thank-you page. */
+  function nextUrl(v){
+    var first = v.name.split(" ")[0];
+    if (CONFIG.tidycalUrl){
+      var u = new URL(CONFIG.tidycalUrl, location.href);
+      u.searchParams.set("name", v.name); u.searchParams.set("email", v.email);
+      return u.href;
+    }
+    var t = new URL(CONFIG.thankYouUrl, location.href);
+    t.searchParams.set("via", v.connect === "whatsapp" ? "whatsapp" : "call");
+    if (["morning", "afternoon", "evening"].indexOf(v.connect) > -1) t.searchParams.set("w", v.connect);
+    t.searchParams.set("name", first);
+    return t.href;
+  }
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var v = validate();
+    if (!v){ var fe = form.querySelector(".err:not(:empty)"); if (fe) fe.scrollIntoView({ block: "center", behavior: "smooth" }); return; }
+    var sc = score(v), btn = el("f-submit"); btn.disabled = true; btn.style.opacity = ".7";
+    var eventId = uid(), payload = buildPayload(v, sc, eventId);
+    if (window.fbq) try {
+      fbq("track", "Lead", { content_name: payload.journey, value: sc.tier === "high" ? 3 : sc.tier === "medium" ? 2 : 1, currency: "INR" }, { eventID: eventId });
+      if (sc.tier !== "low") fbq("trackCustom", "QualifiedLead", { content_name: payload.journey, intent_tier: sc.tier }, { eventID: eventId + "-q" });
+    } catch(x){}
+    if (window.dataLayer) try { dataLayer.push({ event: "generate_lead", lead_journey: payload.journey, lead_intent: sc.tier, event_id: eventId }); } catch(x){}
+    try { sessionStorage.setItem("adhyay_guest", JSON.stringify({ name: v.name.split(" ")[0], connect: v.connect })); } catch(x){}
+    Promise.all([submitLead(payload), postWebhook(payload)]).then(function(){
+      location.href = nextUrl(v);
+    }).catch(function(error){
+      btn.disabled = false; btn.style.opacity = "";
+      err("e-submit", "Something went wrong. Please try again, or WhatsApp us at +91 96258 45915.");
+      try { console.error("Lead submit failed:", error); } catch(x){}
+    });
+  });
+  window.__adhyay = { score: score, openModal: openModal, nextUrl: nextUrl };
+})();
+</script>
+</body>
+</html>
