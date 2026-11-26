@@ -507,7 +507,10 @@ select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns=
 select option,select optgroup{background:#110b07;color:#f7eed9}
 select optgroup{color:#eed489;font-style:normal}
 input:focus,select:focus{outline:none;border-color:var(--gold-hi);background:rgba(242,231,208,.08)}
-.phone{display:grid;grid-template-columns:120px 1fr;gap:9px}
+.phone{display:grid;grid-template-columns:132px 1fr;gap:9px}
+.cc-wrap{position:relative}
+.cc-wrap #f-cc{padding-left:44px}
+.cc-flag{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:24px;height:17px;border-radius:3px;object-fit:cover;pointer-events:none;box-shadow:0 0 0 1px rgba(0,0,0,.35)}
 .consent{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:start;font-size:13.2px;color:var(--cream-dim);line-height:1.5;cursor:pointer}
 .consent input{width:17px;height:17px;margin-top:2px;accent-color:var(--gold)}
 .err{color:#e9a08a;font-size:12.4px}
@@ -1084,9 +1087,12 @@ input::placeholder{color:var(--cream-dimmer)}
         <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required><p class="err" id="e-name" role="alert"></p></div>
         <div class="field"><label for="f-phone">WhatsApp number</label>
           <div class="phone">
+            <div class="cc-wrap">
+            <img id="cc-flag" class="cc-flag" src="https://flagcdn.com/in.svg" alt="" width="24" height="17" loading="lazy" decoding="async">
             <select id="f-cc" name="cc" aria-label="Country code">
-              <option value="+91" selected>🇮🇳 +91</option><option value="+1">🇺🇸 +1</option><option value="+44">🇬🇧 +44</option><option value="+971">🇦🇪 +971</option><option value="+65">🇸🇬 +65</option><option value="+61">🇦🇺 +61</option><option value="+64">🇳🇿 +64</option><option value="+974">🇶🇦 +974</option><option value="+966">🇸🇦 +966</option><option value="+968">🇴🇲 +968</option><option value="+973">🇧🇭 +973</option><option value="+965">🇰🇼 +965</option><option value="+852">🇭🇰 +852</option><option value="+60">🇲🇾 +60</option><option value="+66">🇹🇭 +66</option><option value="+81">🇯🇵 +81</option><option value="+49">🇩🇪 +49</option><option value="+33">🇫🇷 +33</option><option value="+41">🇨🇭 +41</option><option value="+31">🇳🇱 +31</option><option value="+27">🇿🇦 +27</option><option value="+254">🇰🇪 +254</option><option value="+977">🇳🇵 +977</option><option value="+94">🇱🇰 +94</option><option value="+880">🇧🇩 +880</option>
+              <option value="+91" data-iso="in" selected>+91</option><option value="+1" data-iso="us">+1</option><option value="+44" data-iso="gb">+44</option><option value="+971" data-iso="ae">+971</option><option value="+65" data-iso="sg">+65</option><option value="+61" data-iso="au">+61</option><option value="+64" data-iso="nz">+64</option><option value="+974" data-iso="qa">+974</option><option value="+966" data-iso="sa">+966</option><option value="+968" data-iso="om">+968</option><option value="+973" data-iso="bh">+973</option><option value="+965" data-iso="kw">+965</option><option value="+852" data-iso="hk">+852</option><option value="+60" data-iso="my">+60</option><option value="+66" data-iso="th">+66</option><option value="+81" data-iso="jp">+81</option><option value="+49" data-iso="de">+49</option><option value="+33" data-iso="fr">+33</option><option value="+41" data-iso="ch">+41</option><option value="+31" data-iso="nl">+31</option><option value="+27" data-iso="za">+27</option><option value="+254" data-iso="ke">+254</option><option value="+977" data-iso="np">+977</option><option value="+94" data-iso="lk">+94</option><option value="+880" data-iso="bd">+880</option>
             </select>
+            </div>
             <input id="f-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" required>
           </div>
           <p class="err" id="e-phone" role="alert"></p>
@@ -1801,7 +1807,9 @@ var TIERS = [
   function phoneMax(){ return CC_MAX[form.cc.value] || 14; }
   function trimPhone(){ var p = el("f-phone"); p.value = p.value.replace(/\D/g, "").slice(0, phoneMax()); p.setAttribute("maxlength", String(phoneMax())); }
   el("f-phone").addEventListener("input", trimPhone);
-  el("f-cc").addEventListener("change", function(){ trimPhone(); err("e-phone"); });
+  function updateCcFlag(){ var s = el("f-cc"), o = s.options[s.selectedIndex], iso = o && o.getAttribute("data-iso"); if (iso) el("cc-flag").src = "https://flagcdn.com/" + iso + ".svg"; }
+  el("f-cc").addEventListener("change", function(){ trimPhone(); err("e-phone"); updateCcFlag(); });
+  updateCcFlag();
   trimPhone();
 
   function err(id, msg){ var n = el(id); if (n) n.textContent = msg || ""; }
