@@ -522,6 +522,13 @@ input:focus,select:focus{outline:none;border-color:var(--gold-hi);background:rgb
 .dl-list a{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 17px;border:1px solid var(--line);border-radius:11px;text-decoration:none;font-size:14.2px;color:var(--cream);transition:all .3s;text-align:left}
 .dl-list a:hover{border-color:var(--gold-hi);background:rgba(238,212,137,.09)}
 .dl-list a span{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-hi);white-space:nowrap}
+/* Inline TidyCal booking step, shown after a successful enquiry */
+.booking{display:grid;gap:14px;margin-top:4px}
+.booking h2{font-size:clamp(22px,2.5vw,30px)}
+.booking .lead{color:var(--cream-dim);font-size:14.5px;margin-top:8px}
+.booking-frame-wrap{position:relative;width:100%;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;min-height:620px}
+.booking-frame-wrap iframe{display:block;width:100%;height:min(74vh,820px);min-height:620px;border:0}
+@media(max-width:600px){.booking-frame-wrap{min-height:560px}.booking-frame-wrap iframe{height:78vh;min-height:560px}}
 
 
 /* =========================================================================
@@ -1102,6 +1109,15 @@ input::placeholder{color:var(--cream-dimmer)}
         <p class="err" id="e-submit" role="alert"></p>
         <p class="privacy">Your details stay with ADHYAY. We do not share them with anyone.</p>
       </form>
+      <div id="booking-panel" class="booking" hidden>
+        <div>
+          <h2>Choose a time that suits you</h2>
+          <p class="lead">Your enquiry is in. Pick a time below and we will speak with you then — your name and email are already filled in for you.</p>
+        </div>
+        <div class="booking-frame-wrap">
+          <iframe id="booking-frame" title="Book a time to speak with ADHYAY" src="about:blank" loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1128,8 +1144,10 @@ var CONFIG = {
      Every enquiry comes here after "Send my enquiry". The lead is saved to the CRM first.
      In TidyCal, open this booking type > Notifications > "Redirect to custom page after booking",
      and paste:  https://YOUR-DOMAIN/thank-you.html?via=booked&name={{contact.name}}
+     With tidycalUrl set, the booking calendar is embedded inline right after a
+     successful enquiry (name and email prefilled), with no page redirect.
      Leave tidycalUrl empty and every guest goes straight to the thank-you page instead. */
-  tidycalUrl: "",
+  tidycalUrl: "https://tidycal.com/chirag2/adhyay",
   thankYouUrl: "thank-you.html",
 
   /* Every journey the form offers. "p" is the Platinum price, per person for two
@@ -1918,6 +1936,21 @@ var TIERS = [
   /* Where the guest goes next: every enquiry continues to the TidyCal booking page,
      and TidyCal sends them on to the thank-you page once a time is booked.
      Until CONFIG.tidycalUrl is filled in, guests go straight to the thank-you page. */
+  /* Build the TidyCal booking URL with the guest's name and email prefilled. */
+  function bookingUrl(v){
+    var u = new URL(CONFIG.tidycalUrl, location.href);
+    u.searchParams.set("name", v.name); u.searchParams.set("email", v.email);
+    return u.href;
+  }
+  /* Show the TidyCal calendar inline, in place of the form, after a successful enquiry. */
+  function showBooking(v){
+    el("booking-frame").src = bookingUrl(v);
+    el("leadform").style.display = "none";
+    var panel = el("booking-panel"); panel.hidden = false;
+    var scroller = panel.closest(".modal-body") || panel.closest(".modal") || document.scrollingElement;
+    if (scroller && scroller.scrollTo) scroller.scrollTo({ top: 0, behavior: "smooth" });
+    try { panel.scrollIntoView({ block: "start", behavior: "smooth" }); } catch(x){}
+  }
   function nextUrl(v){
     var first = v.name.split(" ")[0];
     if (CONFIG.tidycalUrl){
@@ -1944,7 +1977,8 @@ var TIERS = [
     if (window.dataLayer) try { dataLayer.push({ event: "generate_lead", lead_journey: payload.journey, lead_intent: sc.tier, event_id: eventId }); } catch(x){}
     try { sessionStorage.setItem("adhyay_guest", JSON.stringify({ name: v.name.split(" ")[0], connect: v.connect })); } catch(x){}
     Promise.all([submitLead(payload), postWebhook(payload)]).then(function(){
-      location.href = nextUrl(v);
+      if (CONFIG.tidycalUrl) showBooking(v);
+      else location.href = nextUrl(v);
     }).catch(function(error){
       btn.disabled = false; btn.style.opacity = "";
       err("e-submit", "Something went wrong. Please try again, or WhatsApp us at +91 96258 45915.");
